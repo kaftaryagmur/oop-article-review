@@ -3,10 +3,9 @@
 Önerilen okuma sırası:
 
 1. `../PROJECT_CONTEXT.md` — amaç, kısıtlar ve çalışma durumu.
-2. `../assignment-requirements.md` — ödev belgesinden çıkarılan Seçenek B koşulları.
-3. `paper-evidence.md` — özgün makaleden çıkarılan doğrulanmış kanıtlar.
-4. `verification-log.md` — ön analiz iddialarının doğru, hatalı veya belirsiz olarak ayrılması.
-5. `source-analyses/` — dört ham analiz; yalnızca araştırma girdisi olarak kullanılmalıdır.
+2. `paper-evidence.md` — özgün makaleden çıkarılan doğrulanmış kanıtlar.
+3. `verification-log.md` — ön analiz iddialarının doğru, hatalı veya belirsiz olarak ayrılması.
+4. `source-analyses/` — dört ham analiz; yalnızca araştırma girdisi olarak kullanılmalıdır.
 
 ## Kanıt düzeyleri
 
