@@ -60,6 +60,14 @@ Kırk çalışmada 181 RQ, çalışma başına ortalama 4,5 soru vardır. *Descr
 
 Yazarlar içsel kalite niteliklerini QMOOD üzerinden anlaşılabilirlik, işlevsellik, yeniden kullanılabilirlik ve bakım yapılabilirlik gibi dışsal niteliklerle eşleştirir. Şekil 24'te refactoring'in bu niteliklerle smell'lerden daha fazla ilişki gösterdiği ileri sürülür [1, Bölüm 5.2; 6]. Bu sonuç kontrollü deneyden türetilmiş nedensel etki büyüklüğü değildir. Yazarlar kapsamlı/yeterli kanıt bulunmadığını ve bağlama göre refactoring'in yeni kokular doğurabileceğini de söyler. Bu nedenle “refactoring her koşulda kaliteyi daha çok artırır” genellemesi yapılamaz.
 
+### 4.7 Açık araştırma sorunları
+
+Makalenin Tablo 14'te topladığı 13 açık sorun üç ana eksende okunabilir. I1–I6 kod kokularına odaklanır: ortak adlandırma eksikliği, tespit yaklaşımlarının karşılaştırılması, endüstri algısı, geliştirici katılımı, kalite etkilerinin ölçülmesi ve araçların geliştirilmesi. I7–I11 refactoring tarafında geliştirici bilgisini, kalite etkilerini, araç desteğini, dönüşümlerin uzun dönem izlenmesini ve mimari refactoring ile yerel refactoring arasındaki sınırı ele alır. I12 eğitim, I13 ise güvenilir veri kümeleri ve akademik-endüstriyel çalışmalar arasındaki tutarlılık üzerinden iki alanı birlikte kapsar [1, Tablo 14].
+
+Bu sorunlar arasında nedensel bir sıra da kurulabilir. Ortak terminoloji bulunmadığında veri kümelerinin etiketleri ve araç sonuçları karşılaştırılamaz; karşılaştırılabilir tespit bulunmadığında kokuların kalite üzerindeki etkisi güvenilir biçimde ölçülemez; etki ölçülemediğinde uygun refactoring'in seçimi ve yararının izlenmesi zorlaşır. Dolayısıyla I1 yalnızca sözcük seçimine ilişkin bir sorun değil, I2, I5, I6, I8 ve I9'daki kanıt üretimini etkileyen yöntemsel bir başlangıç noktasıdır.
+
+I13 de sonuçların genellenebilirliği açısından belirleyicidir. Ortak ölçütlere göre doğrulanmış veri kümeleri ve büyük ölçekli endüstriyel örnekler olmadan bir aracın farklı dil, ekip ve proje türlerinde benzer sonuç verip vermediği gösterilemez. Bu nedenle araç sayısındaki artış tek başına alanın olgunlaştığını kanıtlamaz; veri kalitesi, tekrar edilebilirlik ve bağlamsal çeşitlilik birlikte değerlendirilmelidir.
+
 ## 5. Nesneye Dayalı Programlama ile İlişkisi
 
 *Long Method* ve *Large Class* tek sorumluluğun aşınmasına, *Divergent Change* düşük kohezyona, *Feature Envy* davranışın yanlış sınıfta konumlanmasına işaret eder. *Message Chains* ve *Inappropriate Intimacy* yüksek bağımlılığı görünür kılar. Bunlar makaledeki tanımlardan hareketle yapılan OOP yorumlarıdır; her koku otomatik olarak hata değildir [1, Tablo 2].
@@ -68,9 +76,9 @@ Yazarlar içsel kalite niteliklerini QMOOD üzerinden anlaşılabilirlik, işlev
 
 ## 6. Alanın Gelişimi ve Temel Kaynaklar
 
-Alanının teknik temeli Opdyke'ın 1992 tarihli doktora tezine uzanır; tez davranışı koruyan nesne yönelimli dönüşümleri ve önkoşulları ayrıntılandırmıştır [2]. Brown vd.'nin 1998 tarihli *AntiPatterns* kitabı tekrar eden kötü çözümleri kataloglaştırmış; *Blob* ve *Spaghetti Code* gibi sorunları görünür kılmıştır [3]. Fowler vd.'nin 1999 kitabı smell ve refactoring kataloglarını günlük geliştirici pratiğine taşıyarak ortak söz varlığını biçimlendirmiştir [4].
+Alanın teknik temeli Opdyke'ın 1992 tarihli doktora tezine uzanır; tez davranışı koruyan nesne yönelimli dönüşümleri ve önkoşulları ayrıntılandırmıştır [2]. Brown vd.'nin 1998 tarihli *AntiPatterns* kitabı tekrar eden kötü çözümleri kataloglaştırmış; *Blob* ve *Spaghetti Code* gibi sorunları görünür kılmıştır [3]. Fowler vd.'nin 1999 kitabı smell ve refactoring kataloglarını günlük geliştirici pratiğine taşıyarak ortak söz varlığını biçimlendirmiştir [4].
 
-Mens ve Tourwé'nin 2004 araştırması alanı tanım, süreç, araç ve araştırma sorunları bakımından özetleyen erken ve etkili bir derlemedir [5]. Lacerda vd. içinde en çok atıf alan ikincil çalışma olarak raporlanır; ancak atıf sayısı 2019 sonundaki sorguya bağlıdır. Bansiya ve Davis'in QMOOD modeli de nesne yönelimli tasarım özellikleriyle üst düzey kalite nitelikleri arasında ilişki kurarak kalite sentezine dayanak sağlar [6]. Tarihsel çizgi böylece dönüşüm kuramından pratik kataloglara, ardından ikincil ve üçüncül kanıt sentezine uzanır.
+Mens ve Tourwé'nin 2004 araştırması, alanı tanım, süreç, araç ve araştırma sorunları bakımından özetleyen erken ve etkili bir derlemedir [5]. Lacerda vd. tarafından en çok atıf alan ikincil çalışma olarak raporlanır; ancak atıf sayısı 2019 sonundaki sorguya bağlıdır. Bansiya ve Davis'in QMOOD modeli de nesne yönelimli tasarım özellikleriyle üst düzey kalite nitelikleri arasında ilişki kurarak kalite sentezine dayanak sağlar [6]. Tarihsel çizgi böylece dönüşüm kuramından pratik kataloglara, ardından ikincil ve üçüncül kanıt sentezine uzanır.
 
 ## 7. Eleştirel Değerlendirme
 
@@ -78,9 +86,11 @@ Makalenin gücü, parçalı iki alanı aynı kanıt haritasında birleştirmesid
 
 Üçüncül inceleme ise ikincil çalışmaların kapsamı ve raporlama kalitesiyle sınırlıdır. Aynı birincil çalışma birden fazla derlemeye girmiş olabilir; kanıt bağımsızlığı zayıflayabilir. İngilizce, çevrim içi ve altı sayfadan uzun çalışma koşulları yanlılık yaratır. *Card sorting* kategorileri yorumlayıcıdır. Ayrıca dil yüzdeleri ile RQ2'deki örtüşen listeler kolay yanlış okunmaktadır.
 
+Arama kapsamının sekiz veri tabanına yayılması kapsayıcılığı güçlendirir; buna karşılık sorguların veri tabanlarına göre uyarlanması sonuç kümelerinin tam olarak eşdeğer olmadığı anlamına gelir. Yazarların bildirdiği ortalama arama doğruluğu %12,63'tür ve veri tabanları arasında belirgin fark vardır [1, Bölüm 3.6]. Snowballing yedi ek çalışma sağlayarak duyarlılığı artırmış olsa da yalnız seçilen çalışmaların kaynakçalarına dayanması, başlangıç kümesinin sınırlarını bütünüyle ortadan kaldırmaz.
+
 QMOOD sentezi ortak görünüm sağlasa da etki büyüklüklerini, çalışma kalitesini ve bağlamsal değişkenleri nicel meta-analizde birleştirmez. “Refactoring kaliteyi smell'lerden daha fazla etkiler” yazarların sentez sonucudur; her projede net olumlu sonuç kanıtı değildir.
 
-Tablo 14'te I1–I6 smell, I7–I11 refactoring, I12–I13 iki alanla ilgilidir. I1 (adlandırma), I5/I8 (kalite), I9 (araç), I13 (veri kümeleri ve akademi-endüstri tutarlılığı) eleştirel tartışma için güçlüdür. Ön analizlerde bu kısa gözlemlerden türetilen ayrıntılı çözümler doğrudan makale ifadesi sayılmamalıdır; örneğin Feature Envy–kapsülleme ilişkisi makul ders yorumu, Tablo 14 bulgusu değildir.
+Tablo 14'te I1–I6 smell, I7–I11 refactoring, I12–I13 iki alanla ilgilidir. I1 (adlandırma), I5/I8 (kalite), I9 (araç), I13 (veri kümeleri ve akademi-endüstri tutarlılığı) eleştirel tartışma için güçlüdür. Bu kısa gözlemlerden türetilen ayrıntılı çözümler doğrudan makale ifadesi sayılmamalıdır; örneğin Feature Envy ile kapsülleme arasındaki ilişki makul bir OOP yorumudur, fakat Tablo 14'ün doğrudan bulgusu değildir.
 
 ## 8. Geliştirme ve Gelecek Çalışma Önerileri
 
