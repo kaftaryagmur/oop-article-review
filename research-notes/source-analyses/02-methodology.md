@@ -1,4 +1,4 @@
-Lacerda ve arkadaşlarının (2020) **"Code smells and refactoring: A tertiary systematic review of challenges and observations"** başlıklı makalesinin araştırma metodolojisine ilişkin ayrıntılı analiz ve yapılandırılmış inceleme notları aşağıda sunulmuştur.
+Lacerda vd.'nin (2020) **"Code smells and refactoring: A tertiary systematic review of challenges and observations"** başlıklı makalesinin araştırma metodolojisine ilişkin ayrıntılı analiz ve yapılandırılmış inceleme notları aşağıda sunulmuştur.
 
 Analizdeki tüm sayısal veriler, yöntemsel adımlar ve kısıtlar doğrudan ilgili makaleden alınmış ve kaynak pasajlara dayanan atıflarla `[i]` desteklenmiştir.
 
@@ -9,7 +9,7 @@ Analizdeki tüm sayısal veriler, yöntemsel adımlar ve kısıtlar doğrudan il
 * **Doğrudan Makaleden Elde Edilen Bilgi / Tanım:**
   * Üçüncül Sistematik Literatür İncelemesi (Tertiary Systematic Literature Review - Tertiary SLR), belirli bir araştırma alanındaki mevcut kanıt durumunu (*state of the evidence*) haritalandırmak ve sentezlemek amacıyla birincil çalışmalar (*primary studies*) yerine **ikincil çalışmaları (** **secondary studies** **)** inceleyen bir "incelemelerin incelemesi" (*review of reviews*) yöntemidir[1].
 * **İncelenen Çalışma Türleri ve Dağılımı:**
-  * Bu makalede, 1992–2018 yılları arasında "code smells" (kod kokuları) ve "refactoring" (yeniden yapılandırma) konularında yayımlanmış **40 ikincil çalışma** sistematik olarak incelenmiştir[2][3].
+  * Bu makalede, 1992–2018 yılları arasında "code smells" (code smells) ve "refactoring" (yeniden yapılandırma) konularında yayımlanmış **40 ikincil çalışma** sistematik olarak incelenmiştir[2][3].
   * Seçilen ikincil çalışmaların türlerine göre sayısal dağılımı şu şekildedir:
     * **Systematic Literature Reviews (SLR) - Sistematik Literatür İncelemeleri:** 26 çalışma (%65)[4].
     * **Systematic Mappings (SM) - Sistematik Haritalamalar:** 7 çalışma (%17.5)[4].
@@ -40,7 +40,7 @@ Analizdeki tüm sayısal veriler, yöntemsel adımlar ve kısıtlar doğrudan il
     * *Intervention (I):* Sistematik literatür incelemeleri, sistematik haritalamalar, derlemeler (surveys) ve sistematik incelemeler[13].
     * *Comparison (C):* İkincil çalışmaları karakterize etmek amaçlandığından "Uygulanamaz" (*Not applicable*)[6][13].
     * *Outcomes (O):* İkincil çalışmalarda tanımlanan yöntemler, teknikler, pratikler, uygulamalar, problemler, stratejiler ve araçlar[11].
-    * *Context (C):* Kod kokuları ve refactoring alanı[11].
+    * *Context (C):* Code smells ve refactoring alanı[11].
   * **Kartopu Yöntemi (Snowballing):** Veri tabanı aramalarında gözden kaçabilecek çalışmaları havuza eklemek amacıyla Wohlin (2014) tarafından önerilen referans tarama (snowballing) tekniği uygulanmıştır[14][15].
 * **Dayandığı Bölüm / Tablo / Şekil:**
   * Bölüm 3.2 (Identification of relevant literature), Tablo 5 (Digital libraries, criteria considered, and search queries) [69-78, Tablo 5].
@@ -74,8 +74,8 @@ Analizdeki tüm sayısal veriler, yöntemsel adımlar ve kısıtlar doğrudan il
     3. Bilişim alanındaki akademik olmayan etkinliklerde sunulan metinler (ör. *Agile Conference, Agiles Conf*)[18][19].
     4. Öğretici materyaller (*tutorials*), pozisyon bildirileri (*position papers*), yüksek lisans ve doktora tezleri (*theses and dissertations*)[19].
   * **Dahil Etme Kriterleri (Inclusion Criteria):**
-    1. Kod kokuları ve refactoring konularındaki ikincil çalışmalar (Systematic Literature Reviews, Systematic Mappings, Surveys)[19].
-    2. Kod kokusu tespiti için araçların, yöntemlerin, pratiklerin kullanımını, geliştirilmesini veya değerlendirilmesini açıklayan makaleler[19].
+    1. Code smells ve refactoring konularındaki ikincil çalışmalar (Systematic Literature Reviews, Systematic Mappings, Surveys)[19].
+    2. Code smell tespiti için araçların, yöntemlerin, pratiklerin kullanımını, geliştirilmesini veya değerlendirilmesini açıklayan makaleler[19].
     3. Refactoring araçlarının, yöntemlerinin ve tekniklerinin kullanımını, geliştirilmesini veya değerlendirilmesini açıklayan makaleler[19].
     4. **1992–2018** yılları arasında yayımlanmış araştırmalar (1992, Opdyke'ın refactoring konulu ilk doktora tezinin yayın yılıdır)[14][19].
     5. Sadece tam akademik makaleler (**6 sayfadan uzun / full papers**)[14].
@@ -129,12 +129,12 @@ Analizdeki tüm sayısal veriler, yöntemsel adımlar ve kısıtlar doğrudan il
     * *Smells ve refactoring kategorizasyonları*[27][28].
     * *Araştırma yaklaşımları:* (Vaka çalışmaları, anketler, deneysel ve ampirik araştırmalar)[28].
     * *Proje ve veri seti türleri:* (FLOSS, ticari/endüstriyel, akademik/toy), kod depoları ve programlama dilleri[28].
-    * *Bağlam:* İncelenen refactoring teknikleri, en çok atıf alan araçlar ve açıklanan kod/tasarım kokuları[28].
+    * *Bağlam:* İncelenen refactoring teknikleri, en çok atıf alan araçlar ve açıklanan kod/design smells[28].
   * **Kullanılan Yardımcı Araçlar:** Makalelerin kataloglanması ve yapılandırılmasında **Mendeley** kullanılmıştır[28]. Elde edilen veriler açık erişimli bir *replication package* olarak paylaşılmıştır[29].
   * **Sentez ve Sınıflandırma Yöntemi (Card Sorting):** Makalelerden elde edilen konu ve temaları gruplandırmak amacıyla **Card Sorting** (Kart Sıralama / Barrett and Edwards, 1995) yöntemi uygulanmıştır[30].
   * **Tematik Dağılım:** Sentez sonucunda ikincil çalışmalar 3 ana temaya ayrılmıştır [91, Şekil 5]:
     1. *Refactoring odaklı çalışmalar:* 13 çalışma [91, 98, Şekil 5].
-    2. *Smells (kod/tasarım kokuları) odaklı çalışmalar:* 25 çalışma [91, 150, Şekil 5].
+    2. *Smells (kod/design smells) odaklı çalışmalar:* 25 çalışma [91, 150, Şekil 5].
     3. *Her iki konuyu birden ele alan çalışmalar:* 2 çalışma [91, Şekil 5].
   * **İlave Sentez Modelleri:** RQ4 kapsamındaki sorular Easterbrook et al. (2008) taksonomisine göre sınıflandırılmış [231, Tablo 10]; kokular ve refactoring'in kaliteye etkisi ise **QMOOD modeli** çerçevesinde haritalandırılmıştır [304, Şekil 23, Şekil 24].
 * **Dayandığı Bölüm / Tablo / Şekil:**

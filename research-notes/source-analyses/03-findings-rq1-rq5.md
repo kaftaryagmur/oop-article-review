@@ -1,4 +1,4 @@
-Lacerda ve arkadaşlarının (2020) **"Code smells and refactoring: A tertiary systematic review of challenges and observations"** başlıklı makalesinde sunulan araştırma bulguları, yazarların belirlediği **5 Araştırma Sorusu (RQ1–RQ5)** çerçevesinde yapılandırılmış araştırma notları olarak aşağıda analiz edilmiştir[1].
+Lacerda vd.'nin (2020) **"Code smells and refactoring: A tertiary systematic review of challenges and observations"** başlıklı makalesinde sunulan araştırma bulguları, yazarların belirlediği **5 Araştırma Sorusu (RQ1–RQ5)** çerçevesinde yapılandırılmış araştırma notları olarak aşağıda analiz edilmiştir[1].
 
 ---
 
@@ -9,7 +9,7 @@ Lacerda ve arkadaşlarının (2020) **"Code smells and refactoring: A tertiary s
 2. **Sorunun Amacı (Türkçe):**
   * İkincil çalışmalarda yeniden yapılandırma (*refactoring*) ile ilgili hangi konuların araştırıldığını ve hangi alanların eksik kaldığını belirleyerek yeni ikincil çalışma ihtiyaçlarını tespit etmek[4][5].
 3. **Kullanılan Veri veya Analiz Yaklaşımı:**
-  * Doğrudan refactoring konusuna odaklanan 13 ikincil çalışma [S3, S5, S6, S7, S10, S14, S17, S21, S22, S25, S27, S29, S36] ve hem kod kokuları (*code smells*) hem de refactoring konusunu birlikte ele alan 2 çalışma [S4, S13] analiz edilmiş[6][7]; konular *Card Sorting* (Kart Sıralama) tekniğiyle temalara ayrılmıştır[8].
+  * Doğrudan refactoring konusuna odaklanan 13 ikincil çalışma [S3, S5, S6, S7, S10, S14, S17, S21, S22, S25, S27, S29, S36] ve hem *code smells* hem de refactoring konusunu birlikte ele alan 2 çalışma [S4, S13] analiz edilmiş[6][7]; konular *Card Sorting* (Kart Sıralama) tekniğiyle temalara ayrılmıştır[8].
 4. **Elde Edilen Temel Bulgular ve Sayısal Sonuçlar:**
   * **En Çok İncelenen Konular:** Refactoring fırsatlarının belirlenmesi (*refactoring opportunities*) 32 çalışmada, refactoring tekniklerinin uygulanması (*application of refactoring techniques*) 14 çalışmada, destek araçları (*support tools*) 10 çalışmada ele alınmıştır [130, Şekil 6].
   * **En Çok İncelenen Refactoring Teknikleri:** Çıkarma teknikleri (*Extraction techniques*) en ön sıradadır[9]. *Extract (method, variable...)* 9 çalışma [101, Şekil 7]; *Pull Up (field...)* 8 çalışma, *Rename (method, variable...)* 8 çalışma, *Remove (parameter...)* 8 çalışma, *Replace (conditional...)* 8 çalışma, *Push Down (field...)* 7 çalışma, *Move (field, method...)* 7 çalışma, *Inline (method...)* 6 çalışma tarafından incelenmiştir [101, Şekil 7].
@@ -21,23 +21,23 @@ Lacerda ve arkadaşlarının (2020) **"Code smells and refactoring: A tertiary s
 6. **Yazarların Ulaştığı Sonuç:**
   * Akademik araştırmalar ile endüstriyel uygulama arasında boşluk (*gap*) bulunmaktadır[17]. Akademisyenler *Extract Class* ve *Extract Method* gibi karmaşık dönüşümlere odaklanırken, geliştiricilerin günlük işte en çok başvurduğu *Rename Method, Inline Temp, Add Parameter* gibi pratik işlemler akademide ihmal edilmiştir[17].
 7. **Bulguların Sınırları ve Belirsizlikleri:**
-  * Kod kokusu ile refactoring arasındaki ilişki birebir (*one-to-one*) değildir[17][20].
+  * Code smell ile refactoring arasındaki ilişki birebir (*one-to-one*) değildir[17][20].
   * Literatürde tanımlı 72 refactoring tekniğinden yalnızca 20 ila 27 adedi ikincil çalışmalarda detaylandırılmıştır[11][21].
   * Refactoring otomasyonunda kodun dış davranışının korunduğunu (*behavior preservation*) garanti etmek son derece zordur[22][23].
 
 ---
 
-### 2\. RQ2: Kod ve Tasarım Kokusu Konuları ve Yöntemleri
+### 2\. RQ2: Code Smells ve Design Smells Konuları ve Yöntemleri
 
 1. **Özgün İngilizce İfade:**
   * *"RQ2: What smells-related topics have been investigated in secondary studies?"*[3][4]
 2. **Sorunun Amacı (Türkçe):**
-  * İkincil çalışmalarda kod kokuları (*code smells*) ve tasarım kokuları (*design smells*) ile ilgili araştırılan konuları, tespit yöntemlerini ve eksik kalan alanları belirlemek[4][5].
+  * İkincil çalışmalarda *code smells* ve *design smells* ile ilgili araştırılan konuları, tespit yöntemlerini ve eksik kalan alanları belirlemek[4][5].
 3. **Kullanılan Veri veya Analiz Yaklaşımı:**
   * Kokulara odaklanan 25 ikincil çalışma [S1, S2, S8, S9, S11, S12, S15, S16, S18, S19, S20, S23, S24, S26, S28, S29, S30, S31, S32, S33, S34, S35, S36, S37, S38, S39, S40] ve her iki alanı kapsayan 2 ikincil çalışma [S4, S13] analiz edilmiştir[6][24].
 4. **Elde Edilen Temel Bulgular ve Sayısal Sonuçlar:**
-  * **Tasarım Kokuları (14 Çalışma):** En çok bahsedilen top-5 tasarım kokusu: *Blob* (8 çalışma), *Swiss Army Knife* (6 çalışma), *Functional Decomposition* (5 çalışma), *Spaghetti Code* (5 çalışma), *Lava Flow* (2 çalışma) [153, Şekil 8].
-  * **Kod Kokuları (28 Çalışma):** En çok bahsedilen top-10 kod kokusu: *Duplicated Code/Clones* (25 çalışma — 7'si doğrudan klon odaklıdır), *Large Class/God Class* (18 çalışma), *Feature Envy* (18 çalışma), *Long Method* (16 çalışma), *Long Parameter List* (15 çalışma), *Data Clumps* (14 çalışma), *Refused Bequest* (14 çalışma), *Divergent Change* (13 çalışma), *Shotgun Surgery* (13 çalışma), *Lazy Class* (11 çalışma) [157, 158, Şekil 9].
+  * **Design Smells (14 Çalışma):** En çok bahsedilen top-5 tasarım kokusu: *Blob* (8 çalışma), *Swiss Army Knife* (6 çalışma), *Functional Decomposition* (5 çalışma), *Spaghetti Code* (5 çalışma), *Lava Flow* (2 çalışma) [153, Şekil 8].
+  * **Code Smells (28 Çalışma):** En çok bahsedilen top-10 code smell: *Duplicated Code/Clones* (25 çalışma — 7'si doğrudan klon odaklıdır), *Large Class/God Class* (18 çalışma), *Feature Envy* (18 çalışma), *Long Method* (16 çalışma), *Long Parameter List* (15 çalışma), *Data Clumps* (14 çalışma), *Refused Bequest* (14 çalışma), *Divergent Change* (13 çalışma), *Shotgun Surgery* (13 çalışma), *Lazy Class* (11 çalışma) [157, 158, Şekil 9].
   * **Teknik Borç:** *God Class/Large Class* teknik borç bağlamında en çok araştırılan kokudur; bu kokuya sahip sınıfların hatalara (*defects*) 13 kat daha yatkın ve değişime (*change-prone*) 7 kat daha meyilli olduğu bildirilmiştir[25].
   * **Tespit Yaklaşımları:** Metrik tabanlı (*metrics-based*) yaklaşım 28 çalışmada, kural/strateji tabanlı (*detection strategies/rules*) yaklaşım 26 çalışmada, insan algısı (*human perception*) 14 çalışmada, görselleştirme (*visualization*) 10 çalışmada, olasılıksal/arama tabanlı (*probabilistic/search-based*) yaklaşım 5 çalışmada ele alınmıştır [166, 170, 172, Şekil 11].
   * **Birlikte Görülme (** **Co-occurrence** **):** *God Class/Large Class, Long Method, Feature Envy* ve *Duplicated Code/Clones* sıklıkla birlikte ortaya çıkmaktadır [162, Şekil 10].
@@ -52,25 +52,25 @@ Lacerda ve arkadaşlarının (2020) **"Code smells and refactoring: A tertiary s
 
 ---
 
-### 3\. RQ3: Kod Kokusu Tespiti ve Refactoring Destek Araçları
+### 3\. RQ3: Code Smell Tespiti ve Refactoring Destek Araçları
 
 1. **Özgün İngilizce İfade:**
   * *"RQ3: Which tools have been mentioned for code-smell detection and refactoring support?"*[3]
 2. **Sorunun Amacı (Türkçe):**
-  * Kod kokusu tespiti ve refactoring desteği sağlanan yazılım araçlarını, desteklenen programlama dillerini ve araçların metodolojik özelliklerini incelemek[5][39].
+  * Code smell tespiti ve refactoring desteği sağlanan yazılım araçlarını, desteklenen programlama dillerini ve araçların metodolojik özelliklerini incelemek[5][39].
 3. **Kullanılan Veri veya Analiz Yaklaşımı:**
-  * Koku tespiti araçlarından bahseden 19 ikincil çalışma [S1, S2, S9, S12, S13, S17, S18, S19, S20, S26, S27, S30, S31, S33, S34, S35, S38, S39, S40] ve refactoring araçlarından bahseden 13 ikincil çalışma [S1, S2, S4, S9, S12, S13, S14, S17, S18, S29, S34, S39, S40] analiz edilmiştir[40][41].
+  * Code smell tespiti araçlarından bahseden 19 ikincil çalışma [S1, S2, S9, S12, S13, S17, S18, S19, S20, S26, S27, S30, S31, S33, S34, S35, S38, S39, S40] ve refactoring araçlarından bahseden 13 ikincil çalışma [S1, S2, S4, S9, S12, S13, S14, S17, S18, S29, S34, S39, S40] analiz edilmiştir[40][41].
 4. **Elde Edilen Temel Bulgular ve Sayısal Sonuçlar:**
   * **Programlama Dilleri:** Araç araştırmalarının %57.14'ünde (35 çalışma) Java hedeflenmiştir [190, Şekil 12]. C++ (%42.85 - 20 çalışma) ve C# (15 çalışma) takip eden dillerdir [190, Şekil 12].
-  * **Koku Tespit Araçları (162+ Farklı Araç):** En çok bahsedilen top-5 koku tespit aracı: *CCFinder* (%47.36 — 9 çalışma) ve *PMD* (%47.36 — 9 çalışma), *inCode* (%42.10 — 8 çalışma) ve *DECOR/DETEX* (%42.10 — 8 çalışma), *inFusion* (%36.84 — 7 çalışma) [193, Şekil 13].
+  * **Code Smell Tespit Araçları (162+ Farklı Araç):** En çok bahsedilen top-5 code smell tespit aracı: *CCFinder* (%47.36 — 9 çalışma) ve *PMD* (%47.36 — 9 çalışma), *inCode* (%42.10 — 8 çalışma) ve *DECOR/DETEX* (%42.10 — 8 çalışma), *inFusion* (%36.84 — 7 çalışma) [193, Şekil 13].
   * **Refactoring Araçları (24 Farklı Araç):** En çok bahsedilen top-5 refactoring aracı: *JDeodorant* (%71.42 — 10 çalışma), *TrueRefactor* (%21.42 — 3 çalışma), *Eclipse Refactoring* (%14.28 — 2 çalışma), *IntelliJ IDEA Refactoring* (%14.28 — 2 çalışma), *Wrangler* (%7.14 — 1 çalışma) [209, Şekil 14].
-  * **Doğruluk Oranı Raporlaması:** Koku tespit araçlarının yalnızca yaklaşık %30'u doğruluk (*accuracy / precision and recall*) verilerini açıkça paylaşmaktadır[42].
+  * **Doğruluk Oranı Raporlaması:** Code smell tespit araçlarının yalnızca yaklaşık %30'u doğruluk (*accuracy / precision and recall*) verilerini açıkça paylaşmaktadır[42].
   * **Kapsam:** Araçlar ortalama olarak yalnızca 3 ila 4 koku türünü tespit edebilmektedir[43][44]. Fowler'ın 22 kokusunun tamamını kapsadığını belirten tek araç ticari bir araç olan *inFusion*'dur[43].
 5. **Dayandığı Tablo, Şekil ve Bölüm Numaraları:**
   * Bölüm 4.3 (Section 4.3.1–4.3.4), Tablo 8, Tablo 9, Şekil 12, Şekil 13, Şekil 14[16].
 6. **Yazarların Ulaştığı Sonuç:**
   * Akademik araçlar ezici çoğunlukla Java odaklıdır; endüstrinin lider dillerinden JavaScript ihmal edilmiştir[40].
-  * Koku tespitini doğrudan otomatik refactoring önerisine ve dönüştürme uygulamasına bağlayan olgun araç sayısı oldukça azdır (*JDeodorant* bu konudaki ana istisnadır)[41].
+  * Code smell tespitini doğrudan otomatik refactoring önerisine ve dönüştürme uygulamasına bağlayan olgun araç sayısı oldukça azdır (*JDeodorant* bu konudaki ana istisnadır)[41].
 7. **Bulguların Sınırları ve Belirsizlikleri:**
   * Araç sonuçlarını nesnel biçimde karşılaştıracak standart mihenk taşı (*standard benchmark systems*) veri setleri bulunmamaktadır[52][53].
   * Araçların çoğu olgunluktan yoksundur, kullanılabilirlik (*usability*) ve görselleştirme filtreleri yetersizdir[49][54].
@@ -139,27 +139,27 @@ Lacerda ve arkadaşlarının (2020) **"Code smells and refactoring: A tertiary s
 
 #### 1. Disiplinler Arası Ayrışma
 
-**Temel Bulgu (Observation):** Kod kokuları ile refactoring literatürde çoğunlukla birbirinden izole araştırılmaktadır. **Sayısal Kanıt / Veri:** 40 çalışmanın 25'i kokuya, 13'ü refactoring'e odaklanmış; her ikisini birlikte ele alan çalışma sayısı yalnız 2'dir. **Kaynak Referansı:** Section 3.6, Şekil 5[6][84]
+**Temel Bulgu (Observation):** Code smells ile refactoring literatürde çoğunlukla birbirinden izole araştırılmaktadır. **Sayısal Kanıt / Veri:** 40 çalışmanın 25'i kokuya, 13'ü refactoring'e odaklanmış; her ikisini birlikte ele alan çalışma sayısı yalnız 2'dir. **Kaynak Referansı:** Section 3.6, Şekil 5[6][84]
 
 #### 2. Köprü Unsur ve Kalite
 
-**Temel Bulgu (Observation):** Kod kokuları ile refactoring'i bağlayan temel unsur Yazılım Kalitesi ve Teknik Borçtur. QMOOD analizi refactoring'in kaliteye etkisinin kokulardan daha baskın olduğunu gösterir. **Sayısal Kanıt / Veri:** Refactoring uygulamaları 10 farklı kalite niteliğini doğrudan etkilemektedir. **Kaynak Referansı:** Section 5, Şekil 22, Şekil 24[85]
+**Temel Bulgu (Observation):** Code smells ile refactoring'i bağlayan temel unsur Yazılım Kalitesi ve Teknik Borçtur. QMOOD analizi refactoring'in kaliteye etkisinin kokulardan daha baskın olduğunu gösterir. **Sayısal Kanıt / Veri:** Refactoring uygulamaları 10 farklı kalite niteliğini doğrudan etkilemektedir. **Kaynak Referansı:** Section 5, Şekil 22, Şekil 24[85]
 
 #### 3. Refactoring Teknikleri
 
 **Temel Bulgu (Observation):** Akademik araştırmalar karmaşık dönüşümlere odaklanırken pratikte en sık kullanılan basit refactoring'ler akademide ihmal edilmektedir. **Sayısal Kanıt / Veri:** *Extract Class/Method* en çok incelenen teknikken, tanımlı 72 teknikten sadece 20-27 adedi ikincil çalışmalarda yer bulmuştur. **Kaynak Referansı:** Section 4.1.1, Şekil 7[9]
 
-#### 4. Baskın Kod Kokuları
+#### 4. Baskın Code Smells
 
 **Temel Bulgu (Observation):** Tasarım seviyesinde en çok *Blob*, kod seviyesinde ise *Duplicated Code/Clones* ve *Large Class/God Class* incelenmiştir. **Sayısal Kanıt / Veri:** *Duplicated Code* 25 çalışmada, *God Class* 18 çalışmada bahsedilmiştir. *God Class* kusurlara 13 kat daha yatkındır. **Kaynak Referansı:** Section 4.2.1, Section 4.2.2, Şekil 8, Şekil 9[25]
 
 #### 5. Adlandırma &amp; Standart Eksikliği
 
-**Temel Bulgu (Observation):** Terminolojide ciddi tutarsızlıklar (*nomenclature problem*) ve eşik değeri standart yoksunluğu vardır. **Sayısal Kanıt / Veri:** Farklı araçların koku tespit sonuçları arasındaki tutarlılık oranı düşüktür; standart katalog eksiktir. **Kaynak Referansı:** Section 4.2.2, Section 4.2.3[29]
+**Temel Bulgu (Observation):** Terminolojide ciddi tutarsızlıklar (*nomenclature problem*) ve eşik değeri standart yoksunluğu vardır. **Sayısal Kanıt / Veri:** Farklı araçların code smell tespit sonuçları arasındaki tutarlılık oranı düşüktür; standart katalog eksiktir. **Kaynak Referansı:** Section 4.2.2, Section 4.2.3[29]
 
 #### 6. Yazılım Araçları ve Diller
 
-**Temel Bulgu (Observation):** Araçlarda baskın bir Java hakimiyeti vardır. Koku tespiti ile otomatik refactoring'i birleştiren araç sayısı çok azdır. **Sayısal Kanıt / Veri:** Çalışmaların %57.14'ü Java odaklıdır. En çok atıf alan tespit aracı *CCFinder* (%47.36), refactoring aracı *JDeodorant*'tır (%71.42). **Kaynak Referansı:** Section 4.3.1–4.3.3, Şekil 12, Şekil 13, Şekil 14[41]
+**Temel Bulgu (Observation):** Araçlarda baskın bir Java hakimiyeti vardır. Code smell tespiti ile otomatik refactoring'i birleştiren araç sayısı çok azdır. **Sayısal Kanıt / Veri:** Çalışmaların %57.14'ü Java odaklıdır. En çok atıf alan tespit aracı *CCFinder* (%47.36), refactoring aracı *JDeodorant*'tır (%71.42). **Kaynak Referansı:** Section 4.3.1–4.3.3, Şekil 12, Şekil 13, Şekil 14[41]
 
 #### 7. Araştırma Sorusu Yapısı
 
@@ -168,6 +168,3 @@ Lacerda ve arkadaşlarının (2020) **"Code smells and refactoring: A tertiary s
 #### 8. Veri Seti ve Deney Projeleri
 
 **Temel Bulgu (Observation):** Deneylerde ve doğrulamalarda kullanılan projeler ağırlıklı olarak açık kaynaklı projelerdir; endüstriyel doğrulama azdır. **Sayısal Kanıt / Veri:** Projelerin %57'si FLOSS (Açık Kaynak), %34'ü Endüstriyel, %9'u Akademik/Oyuncak projedir. **Kaynak Referansı:** Section 4.5.2, Şekil 18, Şekil 19[79][91]
-
-
-

@@ -6,7 +6,7 @@
 
 ## 1. Giriş
 
-Yazılım bakımı hata düzeltmenin yanında yeni gereksinimlere uyum ve işlev ekleme faaliyetlerini kapsar. Lacerda ve arkadaşları, önceki kaynaklara dayanarak bakımın toplam yazılım maliyetindeki payının %50–%80 aralığında bildirildiğini belirtir. Tasarım kararları aşındıkça kod karmaşıklaşır; yetersiz dokümantasyon koşullarında kaynak kod sistem hakkındaki başlıca bilgi kaynağına dönüşür. *Code smell* (kod kokusu), doğrudan bir program hatası olmak zorunda olmayan, fakat bakım ve evrimi zorlaştıran yapısal bir belirtidir. *Refactoring* (yeniden yapılandırma) ise yazılımın gözlemlenebilir davranışını koruyarak iç yapısını iyileştirmeyi amaçlayan dönüşümlerdir [1].
+Yazılım bakımı hata düzeltmenin yanında yeni gereksinimlere uyum ve işlev ekleme faaliyetlerini kapsar. Lacerda vd., önceki kaynaklara dayanarak bakımın toplam yazılım maliyetindeki payının %50–%80 aralığında bildirildiğini belirtir. Tasarım kararları aşındıkça kod karmaşıklaşır; yetersiz dokümantasyon koşullarında kaynak kod sistem hakkındaki başlıca bilgi kaynağına dönüşür. *Code smell*, doğrudan bir program hatası olmak zorunda olmayan, fakat bakım ve evrimi zorlaştıran yapısal bir belirtidir. *Refactoring* (yeniden yapılandırma) ise yazılımın gözlemlenebilir davranışını koruyarak iç yapısını iyileştirmeyi amaçlayan dönüşümlerdir [1].
 
 Bu kavramlar aynı bakım probleminin farklı yönlerini temsil etmesine karşın araştırma literatürü iki alanı büyük ölçüde ayrı incelemiştir. Seçilen 40 ikincil çalışmanın 25'i smell, 13'ü refactoring temasında sınıflandırılırken yalnız ikisi iki temayı açıkça birlikte ele almıştır [1, Bölüm 3.6]. Lacerda vd. bu parçalı literatürü birleştirmek amacıyla derleme ve sistematik incelemeleri sentezleyen üçüncül sistematik literatür incelemesi yürütmüştür.
 
@@ -16,7 +16,7 @@ Bu kavramlar aynı bakım probleminin farklı yönlerini temsil etmesine karşı
 
 1. **RQ1:** İkincil çalışmalarda refactoring ile ilgili hangi konular araştırılmıştır?
 2. **RQ2:** İkincil çalışmalarda smell ile ilgili hangi konular araştırılmıştır?
-3. **RQ3:** Kod kokusu tespiti ve refactoring desteği için hangi araçlardan söz edilmiştir?
+3. **RQ3:** Code smell tespiti ve refactoring desteği için hangi araçlardan söz edilmiştir?
 4. **RQ4:** Hangi araştırma soruları çalışılmıştır; en çok atıf alan ikincil çalışmalar hangileridir?
 5. **RQ5:** Çalışma türleri, kalite ve incelenen birincil çalışma sayıları bakımından yıllık eğilimler nelerdir? [1, Bölüm 3.1]
 
@@ -36,7 +36,7 @@ Survey, sistematik haritalama ve SLR'ler DARE temelli dört kalite sorusuyla de�
 
 Refactoring temasındaki 13 çalışma teknikler, fırsat belirleme, kalite etkisi, evrim ve teknik borç gibi başlıklara dağılır. *Extract Method* ve *Extract Class* gibi çıkarma teknikleri sık incelenir. Bununla birlikte akademide en çok incelenen tekniklerle geliştiricilerin pratikte en sık kullandıkları aynı değildir: yeniden adlandırma gibi basit işlemler pratikte yaygın olduğu hâlde fırsat çalışmalarında aynı ilgiyi görmez [1, Bölüm 4.1]. Atıf sıklığı bu nedenle endüstriyel önem yerine geçmez.
 
-### 4.2 RQ2 — Kod ve tasarım kokuları
+### 4.2 RQ2 — Kod ve design smells
 
 *Duplicated Code/Clones*, *Large Class/God Class*, *Feature Envy* ve *Long Method* sık tartışılan kokulardır. Makale özellikle adlandırma sorununu gösterir: *Blob*, *Large Class* ve *God Class* kimi kaynaklarda eş anlamlı, kimilerinde ayrı kavramlardır; *Copy and Paste Programming* de *Duplicated Code* ile eşleştirilebilir [1, Bölüm 4.2]. Bu durum araçların neyi ölçtüğünü ve sonuçların karşılaştırılabilirliğini etkiler.
 
@@ -62,7 +62,7 @@ Yazarlar içsel kalite niteliklerini QMOOD üzerinden anlaşılabilirlik, işlev
 
 ### 4.7 Açık araştırma sorunları
 
-Makalenin Tablo 14'te topladığı 13 açık sorun üç ana eksende okunabilir. I1–I6 kod kokularına odaklanır: ortak adlandırma eksikliği, tespit yaklaşımlarının karşılaştırılması, endüstri algısı, geliştirici katılımı, kalite etkilerinin ölçülmesi ve araçların geliştirilmesi. I7–I11 refactoring tarafında geliştirici bilgisini, kalite etkilerini, araç desteğini, dönüşümlerin uzun dönem izlenmesini ve mimari refactoring ile yerel refactoring arasındaki sınırı ele alır. I12 eğitim, I13 ise güvenilir veri kümeleri ve akademik-endüstriyel çalışmalar arasındaki tutarlılık üzerinden iki alanı birlikte kapsar [1, Tablo 14].
+Makalenin Tablo 14'te topladığı 13 açık sorun üç ana eksende okunabilir. I1–I6 *code smell* türlerine odaklanır: ortak adlandırma eksikliği, tespit yaklaşımlarının karşılaştırılması, endüstri algısı, geliştirici katılımı, kalite etkilerinin ölçülmesi ve araçların geliştirilmesi. I7–I11 refactoring tarafında geliştirici bilgisini, kalite etkilerini, araç desteğini, dönüşümlerin uzun dönem izlenmesini ve mimari refactoring ile yerel refactoring arasındaki sınırı ele alır. I12 eğitim, I13 ise güvenilir veri kümeleri ve akademik-endüstriyel çalışmalar arasındaki tutarlılık üzerinden iki alanı birlikte kapsar [1, Tablo 14].
 
 Bu sorunlar arasında nedensel bir sıra da kurulabilir. Ortak terminoloji bulunmadığında veri kümelerinin etiketleri ve araç sonuçları karşılaştırılamaz; karşılaştırılabilir tespit bulunmadığında kokuların kalite üzerindeki etkisi güvenilir biçimde ölçülemez; etki ölçülemediğinde uygun refactoring'in seçimi ve yararının izlenmesi zorlaşır. Dolayısıyla I1 yalnızca sözcük seçimine ilişkin bir sorun değil, I2, I5, I6, I8 ve I9'daki kanıt üretimini etkileyen yöntemsel bir başlangıç noktasıdır.
 
@@ -100,7 +100,7 @@ Java ve açık kaynak ağırlığının ötesine geçen, çok dilli ve endüstri
 
 ## 9. Genel Sonuç
 
-Lacerda vd. kod kokuları ile refactoring'i yazılım kalitesi çevresinde birleştiren kapsamlı bir üçüncül inceleme sunar. Kalıcı katkısı, neyin bilindiği ile neyin güvenilir biçimde bilinmediğini ayırmasıdır. Smell adlandırması tutarsız, araç desteği parçalı, kalite kanıtları heterojen ve akademi-endüstri bağı sınırlıdır. Çalışma aynı zamanda sınıf sorumluluğu, kohezyon, bağımlılık, kalıtım ve çok biçimlilik kavramlarını bakım problemiyle ilişkilendiren güçlü bir OOP çerçevesidir.
+Lacerda vd., *code smells* ile refactoring'i yazılım kalitesi çevresinde birleştiren kapsamlı bir üçüncül inceleme sunar. Kalıcı katkısı, neyin bilindiği ile neyin güvenilir biçimde bilinmediğini ayırmasıdır. Smell adlandırması tutarsız, araç desteği parçalı, kalite kanıtları heterojen ve akademi-endüstri bağı sınırlıdır. Çalışma aynı zamanda sınıf sorumluluğu, kohezyon, bağımlılık, kalıtım ve çok biçimlilik kavramlarını bakım problemiyle ilişkilendiren güçlü bir OOP çerçevesidir.
 
 Bu raporda RQ2 çalışma sayısı, dil yüzdeleri, Tablo 10 ve QMOOD yorumu özgün metin üzerinden sınırlandırılmıştır. Refactoring, kokunun varlığına verilen otomatik ve her zaman yararlı tepki değil; bağlam, davranış koruma ve kalite ödünleşimleriyle değerlendirilmesi gereken tasarım kararıdır.
 

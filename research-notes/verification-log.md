@@ -42,4 +42,3 @@ Tarih: 2 Kasım 2026. Birincil doğrulama kaynağı Lacerda vd. (2020) arXiv v1 
 ## Akademik dürüstlük kararı
 
 Ön analiz metinleri kaynakçada gösterilmeyecek ve doğrudan rapora kopyalanmayacaktır. Özgün makaledeki muğlak cümleler daha güçlü bir kesinlik üretecek biçimde “düzeltilmeyecek”; eleştirel çıkarımlar raporun yorumu olarak işaretlenecektir.
-
