@@ -30,6 +30,10 @@ Seçim akışı 467 kayıtla başlamış, başlık/özet/anahtar kelime elemesin
 
 Survey, sistematik haritalama ve SLR'ler DARE temelli dört kalite sorusuyla değerlendirilmiştir. Veri çıkarımı yayın bilgileri, arama/seçim yaklaşımı, RQ'lar, birincil çalışmalar, kalite puanı, konu ve araç alanları üzerinden yapılmış; kümeler *card sorting* ile oluşturulmuştur. Yalnız İngilizce, çevrim içi erişilebilir ve altı sayfadan uzun çalışmaların alınması süreci belirginleştirirken dil ve erişim yanlılığı yaratır.
 
+DARE temelli değerlendirme; incelemenin dahil etme ve dışlama ölçütlerini açıklayıp açıklamadığını, aramanın yeterli olup olmadığını, seçilen çalışmaların kalitesini değerlendirip değerlendirmediğini ve temel çalışmalar hakkında yeterli bilgi sunup sunmadığını sorgular [1, Bölüm 3.4]. Bu yaklaşım, farklı türlerdeki ikincil çalışmaları ortak bir taban üzerinden karşılaştırmaya yardımcı olur. Bununla birlikte kalite puanı, incelenen birincil kanıtın doğru olduğunu tek başına göstermez; daha çok ikincil çalışmanın yöntemini ne ölçüde açık ve sistematik raporladığını gösterir. Dolayısıyla yüksek raporlama kalitesi ile güçlü ampirik kanıt birbirinden ayrılmalıdır.
+
+Arama sonuçlarının veri tabanları arasında farklılaşması da yöntemin yorumlanmasında önemlidir. Yazarlar sekiz kaynağın birleşiminde ortalama arama doğruluğunu %12,63 olarak bildirir; Google Scholar %33,33 ile en yüksek, Springer %5,62 ile en düşük değere sahiptir [1, Bölüm 3.6]. Bu fark, geniş kapsamlı aramanın daha çok aday çalışma üretirken daha fazla ilgisiz kaydın elle elenmesini gerektirdiğini gösterir. Buna karşılık snowballing ile eklenen yedi çalışma, yalnızca anahtar sözcük sorgularına dayanmanın ilgili literatürün bir bölümünü kaçırabileceğini ortaya koyar.
+
 ## 4. Bulgular ve Sonuçlar
 
 ### 4.1 RQ1 — Refactoring
@@ -82,15 +86,35 @@ Mens ve Tourwé'nin 2004 araştırması, alanı tanım, süreç, araç ve araşt
 
 ## 7. Eleştirel Değerlendirme
 
+### 7.1 Yöntemsel güçlü yönler
+
 Makalenin gücü, parçalı iki alanı aynı kanıt haritasında birleştirmesidir. Sekiz kaynak, açık seçim akışı, kalite değerlendirmesi ve çoğaltma paketi izlenebilirliği artırır. RQ'lar yalnız teknik/araçları değil ikincil araştırmaların soru yapılarını da inceler; bulgular uygulayıcı, araştırmacı ve eğitici açısından tartışılır.
+
+Araştırma sorularının konu, araç, soru yapısı ve yıllık eğilimler biçiminde ayrılması, çalışmanın yalnızca kaynak sayan bir bibliyografik özet olmasını engeller. Tablo 8'de code smell türlerinin tespit yaklaşımları, araçlar ve olası refactoring teknikleriyle birlikte gösterilmesi de parçalı bilgileri aynı bağlamda okumayı kolaylaştırır. Ayrıca yazarların gözlem ile açık sorun arasında ayrım yapması, literatürde sık tekrarlanan iddiaların kesin kanıt olarak sunulması riskini azaltan önemli bir yöntemsel tercihtir.
+
+### 7.2 Üçüncül incelemenin kanıt sınırları
 
 Üçüncül inceleme ise ikincil çalışmaların kapsamı ve raporlama kalitesiyle sınırlıdır. Aynı birincil çalışma birden fazla derlemeye girmiş olabilir; kanıt bağımsızlığı zayıflayabilir. İngilizce, çevrim içi ve altı sayfadan uzun çalışma koşulları yanlılık yaratır. *Card sorting* kategorileri yorumlayıcıdır. Ayrıca dil yüzdeleri ile RQ2'deki örtüşen listeler kolay yanlış okunmaktadır.
 
+Aynı birincil araştırmanın farklı ikincil çalışmalarda tekrar edilmesi, belirli bir bulgunun literatürde olduğundan daha baskın görünmesine yol açabilir. Üçüncül inceleme bu tekrarları ayrı deneysel doğrulamalar gibi değerlendirmemelidir. Benzer şekilde ikincil çalışmalarda deney bağlamı, örneklem büyüklüğü veya ölçüm yöntemi eksik raporlanmışsa bu eksiklik üçüncül senteze de taşınır. Bu nedenle çalışma, doğrudan bir meta-analizden çok araştırma alanının kapsamını ve eğilimlerini gösteren bir kanıt haritası olarak daha güçlüdür.
+
 Arama kapsamının sekiz veri tabanına yayılması kapsayıcılığı güçlendirir; buna karşılık sorguların veri tabanlarına göre uyarlanması sonuç kümelerinin tam olarak eşdeğer olmadığı anlamına gelir. Yazarların bildirdiği ortalama arama doğruluğu %12,63'tür ve veri tabanları arasında belirgin fark vardır [1, Bölüm 3.6]. Snowballing yedi ek çalışma sağlayarak duyarlılığı artırmış olsa da yalnız seçilen çalışmaların kaynakçalarına dayanması, başlangıç kümesinin sınırlarını bütünüyle ortadan kaldırmaz.
+
+### 7.3 Genellenebilirlik
+
+Java'nın araç geliştirme ve deneylerde baskın olması, sonuçların dinamik diller, işlevsel programlama dilleri veya farklı çalışma zamanı özelliklerine sahip platformlara doğrudan aktarılmasını sınırlar. Bir code smell tespit kuralının kullandığı metrik ve eşik değerleri dilin tür sistemi, deyimleri ve proje mimarisiyle değişebilir. Bu nedenle Java üzerinde yüksek başarı gösteren bir yaklaşımın JavaScript, Python veya C++ projelerinde aynı doğrulukla çalışacağı varsayılamaz.
+
+Açık kaynak projeler tekrarlanabilirlik ve veri erişimi açısından değerlidir; ancak kapalı kaynaklı endüstriyel sistemlerin ekip yapısı, süreçleri, yaşları ve değişiklik baskıları farklı olabilir. Küçük akademik veya örnek projelerde ölçülen refactoring etkileri de uzun ömürlü ve çok ekipli sistemlerin bakım maliyetini temsil etmeyebilir. I13'te önerilen güvenilir veri kümeleri bu nedenle yalnız daha fazla proje toplamakla sınırlı kalmamalı; farklı dil, büyüklük, alan ve geliştirme bağlamlarını dengeli biçimde içermelidir.
+
+### 7.4 Kanıt ile yorumun ayrılması
 
 QMOOD sentezi ortak görünüm sağlasa da etki büyüklüklerini, çalışma kalitesini ve bağlamsal değişkenleri nicel meta-analizde birleştirmez. “Refactoring kaliteyi smell'lerden daha fazla etkiler” yazarların sentez sonucudur; her projede net olumlu sonuç kanıtı değildir.
 
+Benzer biçimde bir aracın çok sayıda ikincil çalışmada anılması, o aracın daha doğru, güncel veya kullanışlı olduğunu göstermez. Literatürde 162'den fazla tespit aracının bulunması da sonuçların birbiriyle tutarlı olduğu anlamına gelmez. Code smell tespit edilmesi kesin bir yazılım hatasının varlığını kanıtlamadığı gibi, önerilen refactoring'in uygulanması da bütün kalite niteliklerini aynı anda iyileştirmeyebilir. Bu ayrımlar, frekans bulgularıyla etkinlik bulgularının ve ilişkiyle nedenselliğin karıştırılmaması açısından önemlidir.
+
 Tablo 14'te I1–I6 smell, I7–I11 refactoring, I12–I13 iki alanla ilgilidir. I1 (adlandırma), I5/I8 (kalite), I9 (araç), I13 (veri kümeleri ve akademi-endüstri tutarlılığı) eleştirel tartışma için güçlüdür. Bu kısa gözlemlerden türetilen ayrıntılı çözümler doğrudan makale ifadesi sayılmamalıdır; örneğin Feature Envy ile kapsülleme arasındaki ilişki makul bir OOP yorumudur, fakat Tablo 14'ün doğrudan bulgusu değildir.
+
+Sonuç olarak makalenin en güçlü yönü geniş ve izlenebilir bir araştırma haritası sunmasıdır. En önemli sınırlılığı ise farklı yöntem, örneklem ve kalite ölçütlerine dayanan ikincil çalışmaları ortak bir anlatı içinde birleştirmesidir. Bulgular bu nedenle kesin neden-sonuç hükümleri olarak değil, alandaki eğilimleri, uzlaşıları ve doğrulanmayı bekleyen araştırma sorunlarını gösteren bir sentez olarak okunmalıdır.
 
 ## 8. Geliştirme ve Gelecek Çalışma Önerileri
 
