@@ -74,9 +74,29 @@ I13 de sonuçların genellenebilirliği açısından belirleyicidir. Ortak ölç
 
 ## 5. Nesneye Dayalı Programlama ile İlişkisi
 
-*Long Method* ve *Large Class* tek sorumluluğun aşınmasına, *Divergent Change* düşük kohezyona, *Feature Envy* davranışın yanlış sınıfta konumlanmasına işaret eder. *Message Chains* ve *Inappropriate Intimacy* yüksek bağımlılığı görünür kılar. Bunlar makaledeki tanımlardan hareketle yapılan OOP yorumlarıdır; her koku otomatik olarak hata değildir [1, Tablo 2].
+### 5.1 Sorumluluk ve kohezyon
 
-*Extract Class* sorumlulukları ayırabilir, *Move Method* davranışı uygun nesneye taşıyabilir, *Replace Conditional with Polymorphism* tür denetimli koşulları çok biçimlilikle değiştirebilir. Ancak koku ile tek bir zorunlu çözüm arasında bire bir eşleme yoktur. Aynı koku farklı dönüşümler gerektirebilir; aynı refactoring farklı kokulara uygulanabilir [1, Tablo 8]. İyi tasarım, aracın önerisini mekanik uygulamak yerine davranış koruma ve kalite ödünleşimlerini değerlendirmeyi gerektirir.
+*Long Method* ve *Large Class*, bir metot veya sınıfın gereğinden fazla sorumluluk üstlenebildiğini gösterir. Makalenin Tablo 2'de aktardığı tanımlar, bu iki türü Tek Sorumluluk İlkesiyle açıkça ilişkilendirir [1, Tablo 2]. Bir sınıf farklı değişim nedenlerini aynı yapı içinde topladığında kohezyon düşer ve küçük bir gereksinim değişikliği ilgisiz davranışları da etkileyebilir. *Divergent Change* de aynı sınıfın farklı nedenlerle sürekli değiştirilmesi üzerinden benzer bir sorumluluk dağılması sorununa işaret eder.
+
+*Extract Method*, uzun bir işlemin anlamlı parçalara ayrılmasına; *Extract Class* ise birbiriyle ilişkili alan ve davranışların ayrı bir sınıfta toplanmasına yardımcı olabilir. Bununla birlikte sınıfı bölmek tek başına iyi tasarım üretmez. Yeni sınıflar arasında yoğun veri alışverişi oluşursa kohezyondaki kazanç, artan bağımlılıkla dengelenebilir. Bu nedenle dönüşümün başarısı yalnız sınıf veya metot uzunluğunun azalmasıyla değil, ortaya çıkan sorumluluk sınırlarının kavramsal açıklığıyla değerlendirilmelidir.
+
+### 5.2 Kapsülleme ve bağımlılık
+
+*Feature Envy*, bir metodun kendi sınıfındaki verilerden çok başka bir sınıfın üyeleriyle ilgilenmesi durumudur [1, Tablo 2]. OOP açısından bu belirti, davranışın veriye yakın konumlandırılması ve sınıf sorumluluklarının doğru dağıtılması sorununu gündeme getirir. *Move Method*, davranışı kullandığı verinin sahibi olan sınıfa taşıyarak bu ilişkiyi iyileştirebilir. Ancak metodun birden fazla sınıfın verisine aynı ölçüde ihtiyaç duyması, sorunun yalnızca yanlış konumlandırmadan değil eksik bir alan soyutlamasından kaynaklandığını gösterebilir.
+
+*Message Chains* ve *Inappropriate Intimacy*, sınıflar arasındaki bağımlılığın farklı biçimlerini görünür kılar. Uzun mesaj zincirleri bir nesnenin başka nesnelerin iç yapısını adım adım bilmesini gerektirirken, uygunsuz yakınlık iki sınıfın birbirinin ayrıntılarına aşırı bağımlı olmasına yol açar. Bu yapılar kapsülleme sınırlarını zayıflatabilir ve bir sınıftaki değişikliğin başka sınıflara yayılmasına neden olabilir. *Shotgun Surgery* ise tek bir değişikliğin çok sayıda sınıfa dağılmasıyla bu değişim yayılımının bakım üzerindeki sonucunu gösterir.
+
+### 5.3 Kalıtım ve çok biçimlilik
+
+*Refused Bequest*, bir alt sınıfın üst sınıftan devraldığı veri veya davranışların önemli bölümünü kullanmamasını ifade eder [1, Tablo 2]. Bu durum, kalıtım ilişkisinin gerçek bir “bir türüdür” ilişkisine dayanmadığını veya alt sınıfın yanlış bir hiyerarşide konumlandırıldığını düşündürebilir. *Pull Up Method*, ortak davranışları üst sınıfta birleştirebilir; *Collapse Hierarchy* ise gereksiz ayrımları ortadan kaldırabilir. Ancak bu teknikler yalnız davranışsal uyumluluk ve sınıfların kavramsal rolleri korunuyorsa anlamlıdır.
+
+Yoğun tür denetimine dayanan *Switch Statements* kullanımı da çok biçimliliğin yeterince kullanılmadığı bir tasarıma işaret edebilir. *Replace Conditional with Polymorphism*, türe göre dallanan davranışı alt sınıflara veya ortak bir arayüzü gerçekleştiren nesnelere dağıtabilir. Buna rağmen her koşullu ifade bir design smell değildir. Az sayıda, kararlı ve açık bir koşulu sınıf hiyerarşisine dönüştürmek sistemi gereksiz yere karmaşıklaştırabilir. Refactoring kararı, yalnız kalıbın varlığına değil değişim sıklığına ve davranış çeşitliliğine dayanmalıdır.
+
+### 5.4 Bağlama bağlı refactoring kararı
+
+Makalenin Tablo 8'deki eşleştirmeleri, code smell türleri ile refactoring teknikleri arasında bire bir ilişki olmadığını gösterir. Aynı smell birden fazla dönüşümle ele alınabilir; aynı refactoring farklı smell türlerinde kullanılabilir [1, Tablo 8]. Örneğin her *Large Class* otomatik olarak *Extract Class* gerektirmez. Sınıf büyük olsa da tek ve tutarlı bir sorumluluğu temsil edebilir; tersine, daha küçük bir sınıf birbirinden kopuk sorumluluklar taşıyabilir.
+
+Bu nedenle code smell, kesin hata kararı değil tasarımın yeniden incelenmesini sağlayan bir belirtidir. Refactoring de kendi başına amaç değil, davranışı koruyarak tasarımın anlaşılabilirliğini ve değiştirilebilirliğini geliştirmeye yarayan bir araçtır. OOP ilkeleri bu kararda mekanik eşikler sunmak yerine sorumluluk, kapsülleme, bağımlılık, kalıtım ve çok biçimlilik açısından değerlendirme ölçütleri sağlar. Araç önerisi başlangıç noktası olabilir; nihai karar sistem bağlamını ve kalite ödünleşimlerini bilen geliştirici tarafından verilmelidir.
 
 ## 6. Alanın Gelişimi ve Temel Kaynaklar
 
