@@ -100,9 +100,27 @@ Bu nedenle code smell, kesin hata kararı değil tasarımın yeniden incelenmesi
 
 ## 6. Alanın Gelişimi ve Temel Kaynaklar
 
-Alanın teknik temeli Opdyke'ın 1992 tarihli doktora tezine uzanır; tez davranışı koruyan nesne yönelimli dönüşümleri ve önkoşulları ayrıntılandırmıştır [2]. Brown vd.'nin 1998 tarihli *AntiPatterns* kitabı tekrar eden kötü çözümleri kataloglaştırmış; *Blob* ve *Spaghetti Code* gibi sorunları görünür kılmıştır [3]. Fowler vd.'nin 1999 kitabı smell ve refactoring kataloglarını günlük geliştirici pratiğine taşıyarak ortak söz varlığını biçimlendirmiştir [4].
+### 6.1 Davranışı koruyan dönüşümlerin teknik temeli
 
-Mens ve Tourwé'nin 2004 araştırması, alanı tanım, süreç, araç ve araştırma sorunları bakımından özetleyen erken ve etkili bir derlemedir [5]. Lacerda vd. tarafından en çok atıf alan ikincil çalışma olarak raporlanır; ancak atıf sayısı 2019 sonundaki sorguya bağlıdır. Bansiya ve Davis'in QMOOD modeli de nesne yönelimli tasarım özellikleriyle üst düzey kalite nitelikleri arasında ilişki kurarak kalite sentezine dayanak sağlar [6]. Tarihsel çizgi böylece dönüşüm kuramından pratik kataloglara, ardından ikincil ve üçüncül kanıt sentezine uzanır.
+Alanın teknik başlangıç noktalarından biri Opdyke'ın 1992 tarihli doktora tezidir. Opdyke, nesne yönelimli çerçevelerin yeniden düzenlenmesini programın gözlemlenebilir davranışını koruyan dönüşümler üzerinden ele almış ve bu dönüşümlerin güvenli biçimde uygulanabilmesi için önkoşullar tanımlamıştır [2]. Böylece refactoring, yalnızca kodun daha düzenli görünmesini sağlayan sezgisel bir temizlik işlemi değil, uygulanabilirliği denetlenmesi gereken küçük dönüşümlerin bileşimi olarak kavramsallaştırılmıştır. Tezde ilkel dönüşümlerin daha yüksek düzeyli yeniden yapılandırmaları oluşturacak biçimde birleştirilmesi, sonraki araç desteği çalışmalarına da teknik bir zemin sağlamıştır. Bu yaklaşımın nesneye dayalı programlama açısından önemi, sınıf hiyerarşisi, örnek değişken, metot ve kalıtım ilişkilerindeki değişikliklerin işlevsel davranıştan bağımsız değerlendirilemeyeceğini göstermesidir.
+
+### 6.2 Sorun ve çözüm kataloglarının oluşması
+
+Brown vd.'nin 1998 tarihli *AntiPatterns* kitabı, tekrar eden fakat olumsuz sonuç üreten çözümleri yazılım geliştirme, yazılım mimarisi ve proje yönetimi başlıkları altında kataloglaştırmıştır [3]. Bu kapsam, antipattern kavramının yalnızca kaynak kod düzeyindeki code smell'lerle özdeş olmadığını gösterir. *Blob* ve *Spaghetti Code* gibi örnekler, tasarım kararlarının sorumluluk dağılımı, bağımlılık ve değiştirilebilirlik üzerindeki etkisini görünür kılmıştır. Kitabın tarihsel katkısı, sorunu adlandırmakla kalmayıp bağlamı, ortaya çıkan olumsuz sonuçları ve yeniden yapılandırılmış çözümü birlikte sunmasıdır.
+
+Fowler vd.'nin 1999 tarihli çalışması ise refactoring bilgisini geliştiricinin günlük pratiğine taşıyan ortak bir söz varlığı oluşturmuştur [4]. Refactoring, programın dış davranışını değiştirmeden iç yapısını küçük ve denetlenebilir adımlarla iyileştirme tekniği olarak sunulmuş; code smell'ler bu adımları gerektirebilecek tasarım sorunlarının belirtileri şeklinde ele alınmıştır. Katalog yapısı, bir code smell'i otomatik olarak hata saymak yerine hangi bağlamda hangi dönüşümün düşünülebileceğini tartışmaya açar. Bu nedenle Fowler vd.'nin katkısı yalnızca terim üretmek değil, teşhis ile müdahale arasında tekrarlanabilir bir uygulama dili kurmaktır.
+
+### 6.3 Ölçme ve araştırma alanının sistemleşmesi
+
+Bansiya ve Davis'in 2002 tarihli QMOOD modeli, nesne yönelimli tasarım özellikleri ile yeniden kullanılabilirlik, esneklik, anlaşılabilirlik, işlevsellik, genişletilebilirlik ve etkililik gibi üst düzey kalite nitelikleri arasında nicel ilişkiler kurmuştur [6]. Model, refactoring tarihinin doğrudan bir kataloğu değildir; buna karşılık, yapısal değişikliklerin kalite üzerindeki etkisini ölçme arayışının önemli bir örneğidir. Lacerda vd.'nin refactoring etkilerini QMOOD nitelikleri üzerinden yeniden gruplaması da bu ölçme geleneğine dayanır. Ancak bu yeniden gruplama, farklı bağlamlarda yürütülmüş araştırmaların sonuçlarını ortak başlıklar altında birleştirir; tek başına nedensel etki kanıtı oluşturmaz.
+
+Mens ve Tourwé'nin 2004 tarihli araştırması, refactoring alanındaki çalışmaları desteklenen etkinlikler, kullanılan teknikler, dönüştürülen yazılım artefaktları, araç desteği ve yazılım sürecine etkiler bakımından sistemleştirmiştir [5]. Bu çalışma, alanın tek tek dönüşüm kataloglarından araştırma soruları, biçimsel güvenceler ve araç tasarımı çevresinde örgütlenen bir inceleme alanına geçtiğini gösterir. Lacerda vd. bu yayını kendi tarama tarihlerindeki atıf verilerine göre en çok atıf alan ikincil çalışma olarak raporlamıştır [1]. Bu niteleme kalıcı bir sıralama değil, 2019 sonunda alınmış bibliyometrik bir kesittir.
+
+### 6.4 Ampirik kanıtların çeşitlenmesi
+
+2010'lu yıllardaki çalışmalar, smell ile bakım kalitesi arasındaki ilişkinin bağlama göre değiştiğini ortaya koymuştur. Khomh vd., dört açık kaynak sisteminin 54 sürümünde 13 antipattern'i incelemiş; antipattern içeren sınıfların hemen hemen tüm sürümlerde değişime ve hata düzeltmeye daha yatkın olduğunu, bu farkın yalnızca sınıf büyüklüğüyle açıklanamadığını bildirmiştir [7]. Buna karşılık Sjøberg vd.'nin profesyonel geliştiricilerle yürüttüğü kontrollü çalışmada incelenen 12 code smell'in hiçbiri, dosya büyüklüğü ve değişiklik sayısı denetlendiğinde daha yüksek bakım çabasıyla anlamlı biçimde ilişkilendirilmemiştir [8]. Bu iki sonuç çelişki olarak görünse de aynı bağımlı değişkeni ve aynı araştırma tasarımını kullanmaz: ilki sürüm geçmişindeki değişim ve hata eğilimini, ikincisi belirli bakım görevlerinde harcanan süreyi ölçer.
+
+Al Dallal'ın 2015 tarihli sistematik derlemesi, refactoring fırsatlarını belirleyen 47 birincil çalışmayı incelemiş; *Extract Class* ve *Move Method* işlemlerinin öne çıktığını, değerlendirmelerin çoğunlukla akademik araştırmacılar tarafından açık kaynak ve görece küçük veri kümeleri üzerinde yapıldığını göstermiştir [9]. Sharma ve Spinellis ise 445 birincil çalışmayı sentezleyerek smell tanımlarındaki çeşitliliği, beş temel tespit yaklaşımını ve mevcut araçların yanlış pozitifler ile sınırlı smell kapsamı sorunlarını belirlemiştir [10]. Böylece tarihsel çizgi, 1990'lardaki güvenli dönüşüm ve katalog oluşturma çabasından, 2000'lerde alanın sistemleştirilmesine; oradan da büyük literatür kümelerinde kanıtın kapsamını ve sınırlarını sorgulayan ikincil araştırmalara ilerlemiştir. Lacerda vd.'nin üçüncül incelemesi bu çizginin son halkasında, sonuçları tek bir kesin hükme indirgemek yerine hangi konularda uzlaşma veya belirsizlik bulunduğunu haritalandırmaktadır [1].
 
 ## 7. Eleştirel Değerlendirme
 
@@ -161,3 +179,11 @@ Bu raporda RQ2 çalışma sayısı, dil yüzdeleri, Tablo 10 ve QMOOD yorumu öz
 [5] Mens, T., & Tourwé, T. (2004). A survey of software refactoring. *IEEE Transactions on Software Engineering, 30*(2), 126–139. https://doi.org/10.1109/TSE.2004.1265817
 
 [6] Bansiya, J., & Davis, C. G. (2002). A hierarchical model for object-oriented design quality assessment. *IEEE Transactions on Software Engineering, 28*(1), 4–17. https://doi.org/10.1109/32.979986
+
+[7] Khomh, F., Di Penta, M., Guéhéneuc, Y.-G., & Antoniol, G. (2012). An exploratory study of the impact of antipatterns on class change- and fault-proneness. *Empirical Software Engineering, 17*, 243–275. https://doi.org/10.1007/s10664-011-9171-y
+
+[8] Sjøberg, D. I. K., Yamashita, A., Anda, B. C. D., Mockus, A., & Dybå, T. (2013). Quantifying the effect of code smells on maintenance effort. *IEEE Transactions on Software Engineering, 39*(8), 1144–1156. https://doi.org/10.1109/TSE.2012.89
+
+[9] Al Dallal, J. (2015). Identifying refactoring opportunities in object-oriented code: A systematic literature review. *Information and Software Technology, 58*, 231–249. https://doi.org/10.1016/j.infsof.2014.08.002
+
+[10] Sharma, T., & Spinellis, D. (2018). A survey on software smells. *Journal of Systems and Software, 138*, 158–173. https://doi.org/10.1016/j.jss.2017.12.034
