@@ -15,6 +15,6 @@ Bu depo, Nesneye Dayalı Programlama Dilleri dersi Seçenek B makale inceleme ö
 - `research-notes/verification-log.md`: iddia bazında doğrulama, düzeltme ve belirsizlik kaydı.
 - `research-notes/paper-evidence.md`: özgün makalenin bölüm, tablo ve şekillerinden çıkarılan kanıt özeti.
 
-## Mevcut durum (2 Kasım 2026)
+## İnceleme standardı
 
-Ana makalenin RQ1–RQ5 ifadeleri, çalışma seçimi (467 → 59 → 33 + 7 = 40), 13/25/2 tema dağılımı, çalışma türleri, dil/araç bulguları, Tablo 10, QMOOD yorumu ve I1–I13 başlıkları arXiv tam metni üzerinden kontrol edilmiştir. Raporun ilk kaynaklı sürümü hazırlanmıştır.
+Her çalışma gününde rapora taşınan iddialar için kaynak sürümü, bölüm, tablo veya şekil ve varsa payda doğrulanır. Metin, görsel ve ek veri uyuşmadığında fark kanıt kaydında izlenir. Yazarın bulgusu, raporun yorumu ve çözülemeyen belirsizlik ayrıştırılır. Aynı ölçüt önceki bölümlerin yeniden okunmasında da uygulanır.

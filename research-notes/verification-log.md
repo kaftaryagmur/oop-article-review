@@ -18,11 +18,11 @@
 
 **CCFinder ve PMD %47,36'dır. — Doğrulandı.** **Kanıt ve değerlendirme:** Payda tüm 40 değil, araç bildiren 19 çalışmadır (9/19).
 
-**DECOR/DETEX `%42,10` oranındadır. — Makalede aritmetik tutarsızlık bulundu.** **Kanıt ve değerlendirme:** Bölüm 4.3.2 yedi çalışma kodu sıralar. 7/19 = `%36,84`tür; `%42,10` sekiz çalışmaya karşılık gelir. Raporda çalışma listesiyle uyumlu `%36,84` kullanılmıştır.
+**DECOR/DETEX oranı.** Şekil 13 ve [ek veri paketi v2](https://doi.org/10.17632/72fvy4r3gj.2) sekiz anılmayı doğrular (8/19, yaklaşık %42,1). Ham yanıtlarda S1 de DECOR bildirir. Önceki %36,84 düzeltmesi, Bölüm 4.3.2'deki eksik listeye dayanıyordu.
 
 **24 refactoring aracı vardır. — Doğrulandı.** **Kanıt ve değerlendirme:** Bölüm 4.3.3, 13 ikincil çalışmada adı geçen farklı araçlar.
 
-**Tablo 10 yüzdelerinin toplamı %100'ü aştığı için hata vardır. — Düzeltildi.** **Kanıt ve değerlendirme:** Çalışma yüzdeleri örtüşebilir; aynı çalışma farklı RQ türleri içerir. RQ havuzu sütununun paydası 181'dir.
+**Tablo 10 sütunları.** Çalışma sayıları örtüşebilir. Soru sütununda basılı satırlar 185 eder. Ek veri 181 soruyu ve *Causality* kategorisinde 14 yerine 10 soruyu doğrular.
 
 **26 SLR + 7 SM + 7 survey + 1 multivocal = 41 çalışma — Düzeltildi.** **Kanıt ve değerlendirme:** S16 hem survey kümesindedir hem multivocal niteliği taşır; ayrı 41. kayıt değildir.
 
@@ -34,13 +34,13 @@
 
 **I13 doğrudan “%57 FLOSS” bulgusudur. — Belirsiz.** **Kanıt ve değerlendirme:** Tablo 14 güvenilir veri kümeleri ve büyük ölçekli akademik/endüstriyel projeler ister; yüzdeyi I13'ün tanımı gibi sunmak aşırı yorumdur.
 
-**`%57 FLOSS` çalışmaların oranıdır. — Düzeltildi.** **Kanıt ve değerlendirme:** Bölüm 4.5.2 ve Şekil 18, bu oranı ikincil çalışmalarda anılan deney projeleri için verir; çalışmaların, araçların veya veri kümelerinin `%57`si olarak genellenemez.
+**FLOSS yüzdesinin paydası.** Ek veride 44 proje türü işaretinin 25'i FLOSS'tur. Aynı derleme birden fazla kategori işaretleyebilir.
 
 **Feature Envy kapsüllemeyi ihlal eder. — Yorum.** **Kanıt ve değerlendirme:** Makul OOP değerlendirmesidir; makalenin doğrudan bulgusu diye sunulmamalıdır.
 
-**I8 için “14 tekniğin kalite etkisini inceleyen hiçbir çalışma yoktur.” — Doğrulanmadı.** **Kanıt ve değerlendirme:** Bu güçlü mutlak ifade Tablo 14 tarafından desteklenmemektedir.
+**I8 ve 14 refactoring seçeneği.** Bölüm 5.2, ele alınan smell örneklerine yönelik 14 dönüşüm için senteze giren kaynaklarda kalite etkisi araştırması bulunmadığını bildirir. İfade incelenen kapsamla sınırlıdır.
 
-**Araçlar yalnızca 3–4 smell türünü kapsar. — Makale iddiası doğrulandı; nicel dayanağı belirsiz.** **Kanıt ve değerlendirme:** RQ3 özetinde bu aralık doğrudan yazılmıştır. Ancak bunun ortalama mı, tipik aralık mı olduğu, hangi araç kümesinden ve hangi hesapla üretildiği açıklanmaz; bu nedenle bağımsız ölçüm gibi sunulamaz.
+**Araçların ortalama kapsamı.** Bölüm 4.3.2, S2 ve S18'e dayanarak üç ila dört tür ortalamasını verir. Üçüncül makalede araç kümesi ve hesaplama yöntemi açık değildir.
 
 
 ## Akademik dürüstlük kararı

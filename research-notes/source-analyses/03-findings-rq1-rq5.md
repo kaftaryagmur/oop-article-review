@@ -1,6 +1,6 @@
 # RQ1–RQ5 Ayrıntılı Analiz Kaydı
 
-Bu dosya ilk ayrıntılı çözümlemeyi korur. Sayısal iddialar için `../paper-evidence.md` ve `../verification-log.md` esas alınmalıdır. Özellikle Java oranı `%57,14` değildir; 35 çalışmanın tamamı Java'yı, 20'si C++'ı (`%57,14`) ve 15'i C#'ı (`%42,85`) anar. DECOR/DETEX yedi çalışmada geçtiği için oranı `7/19 = %36,84`tür. `%57 FLOSS` çalışma oranı değil, deneylerde anılan projelerin oranıdır. Araçların “3–4 smell” kapsadığı ifadesi makalenin RQ3 özetinde bulunur, ancak hesaplama yöntemi açıklanmaz.
+Bu dosya ilk çözümlemeyi korur. Güncel sayımlar ve kanıt sınırları [kanıt özeti](../paper-evidence.md) ile [doğrulama günlüğünde](../verification-log.md) yer alır.
 
 Lacerda vd.'nin (2020) **"Code smells and refactoring: A tertiary systematic review of challenges and observations"** başlıklı makalesinde sunulan araştırma bulguları, yazarların belirlediği **5 Araştırma Sorusu (RQ1–RQ5)** çerçevesinde yapılandırılmış araştırma notları olarak aşağıda analiz edilmiştir[1].
 

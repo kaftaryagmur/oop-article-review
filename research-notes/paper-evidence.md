@@ -20,11 +20,11 @@ Kaynak: Lacerda vd. (2020). Bölüm, tablo ve şekil numaraları arXiv v1 tam me
 
 ## Dil ve araç yüzdeleri
 
-Bölüm 4.3.1'de listelenen 35 çalışmanın tamamı Java'yı anar. Ardından C++ 20/35 (%57,14), C# 15/35 (%42,85) gelir; bu oranları Java'ya bağlamak yanlıştır. CCFinder ve PMD araç bildiren 19 çalışmanın 9'unda (%47,36), inCode 8'inde (%42,10), DECOR/DETEX ve inFusion 7'sinde (%36,84) geçer. Özgün metin DECOR/DETEX için yedi çalışma sıralamasına rağmen `%42,10` verir; bu bir aritmetik tutarsızlıktır. RQ3 özeti araçların 3–4 smell kapsadığını doğrudan ileri sürer, ancak bu sayının nasıl hesaplandığını ve paydasını açıklamaz.
+Şekil 12 ve ek veri Java 35, C++ 20 ve C# 15 çalışma gösterir. `ResearchData_JSS.xlsx` dosyasında `Top5 smells tools` sayfası DECOR/DETEX için 8/19 verir. Ham yanıt dosyasındaki `General` sayfasında B ve AF sütunları S1'in metindeki yedi kodluk listeden eksik olduğunu gösterir. AG sütununda JDeodorant 13 dolu yanıtın 10'unda geçer. Bölüm 4.3.2 üç ila dört tür ortalamasını S2 ve S18'e dayandırır. Hesaplama yöntemi üçüncül makalede verilmez.
 
 ## Tablo 10'un doğru okunması
 
-Tablo iki farklı payda verir: `# of studies` sütunundaki yüzdeler 40 çalışma, `# RQs in the pool` sütunundaki yüzdeler 181 RQ üzerindendir. Bir çalışma farklı alt kategorilerde RQ'lara sahip olabileceği için çalışma yüzdeleri birbirini dışlayan parçalar değildir ve toplamlarının %100 olması beklenmez.
+Çalışma sütununda payda 40'tır ve çalışmalar kategoriler arasında örtüşebilir. Soru sütunundaki basılı satırlar 185 eder. [Ek veri paketi v2](https://doi.org/10.17632/72fvy4r3gj.2) içindeki `ResearchData_JSS.xlsx` dosyasının `RQs Analysis` sayfasında 186 kayıttan beşi soru bildirmeyen `WRQ` kayıtlarıdır. Kalan 181 sorunun 10'u *Causality* kategorisindedir. Basılı tabloda bu kategori 14 olarak verilmiştir.
 
 ## QMOOD yorumu
 
@@ -32,7 +32,7 @@ Bölüm 5.2 ve Şekil 24, yalnızca seçilen ikincil çalışmalarda bulunan iç
 
 ## RQ5 kapsam uyarıları
 
-Bölüm 4.5'te `%57 FLOSS`, çalışmalara veya araçlara değil deneylerde anılan projelere aittir. Çalışmaların `%80`den fazlasının 3–4 kalite puanı alması da dört DARE sorusuna göre raporlama kalitesini ifade eder; birincil kanıtların doğruluğu veya etki büyüklüğü değildir.
+Ham yanıt dosyasının `General` sayfasında Z3:Z42 aralığı 44 kategori işareti içerir. Bunların 25'i FLOSS, 15'i endüstriyel ve dördü örnek projedir. Yüzde, örtüşebilen kategori işaretlerinin dağılımına aittir. Bölüm 4.5.3 ve Şekil 20, kimi derlemelerde kaynakça uzunluğunu birincil çalışma sayısına vekil alır.
 
 ## I1–I13 (Tablo 14)
 

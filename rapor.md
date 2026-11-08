@@ -32,7 +32,7 @@ Survey, sistematik haritalama ve SLR'ler DARE temelli dört kalite sorusuyla de�
 
 DARE temelli değerlendirme; incelemenin dahil etme ve dışlama ölçütlerini açıklayıp açıklamadığını, aramanın yeterli olup olmadığını, seçilen çalışmaların kalitesini değerlendirip değerlendirmediğini ve temel çalışmalar hakkında yeterli bilgi sunup sunmadığını sorgular [1, Bölüm 3.4]. Bu yaklaşım, farklı türlerdeki ikincil çalışmaları ortak bir taban üzerinden karşılaştırmaya yardımcı olur. Bununla birlikte kalite puanı, incelenen birincil kanıtın doğru olduğunu tek başına göstermez; daha çok ikincil çalışmanın yöntemini ne ölçüde açık ve sistematik raporladığını gösterir. Dolayısıyla yüksek raporlama kalitesi ile güçlü ampirik kanıt birbirinden ayrılmalıdır.
 
-Arama sonuçlarının veri tabanları arasında farklılaşması da yöntemin yorumlanmasında önemlidir. Yazarlar sekiz kaynağın birleşiminde ortalama arama doğruluğunu %12,63 olarak bildirir; Google Scholar %33,33 ile en yüksek, Springer %5,62 ile en düşük değere sahiptir [1, Bölüm 3.6]. Bu fark, geniş kapsamlı aramanın daha çok aday çalışma üretirken daha fazla ilgisiz kaydın elle elenmesini gerektirdiğini gösterir. Buna karşılık snowballing ile eklenen yedi çalışma, yalnızca anahtar sözcük sorgularına dayanmanın ilgili literatürün bir bölümünü kaçırabileceğini ortaya koyar.
+Sekiz kaynaktaki 467 kaydın 59'u ilk elemeyi geçmiştir (%12,63). Bu oran ilk elemenin verimini gösterir. *Snowballing* yoluyla eklenen yedi çalışma, kaynakça taramasının sorguyla bulunan kümeyi tamamladığını gösterir [1, Bölüm 3.6; 11].
 
 ## 4. Bulgular ve Sonuçlar
 
@@ -42,9 +42,9 @@ Refactoring temasındaki 13 çalışma teknikler, fırsat belirleme, kalite etki
 
 Akademide en çok incelenen tekniklerle geliştiricilerin pratikte en sık kullandıkları da aynı değildir. Yeniden adlandırma gibi basit işlemler pratikte yaygın olduğu hâlde fırsat belirleme çalışmalarında aynı ilgiyi görmez. Atıf sıklığı bu nedenle endüstriyel önem yerine geçmez; makalenin RQ1 sonucu, araç otomasyonunun davranışı koruma, dönüşümü uygulama ve artefakt tutarlılığını sürdürme görevlerinde hâlâ sınırlı olduğunu da gösterir [1, Bölüm 4.1.2].
 
-### 4.2 RQ2 — Kod ve design smells
+### 4.2 RQ2 — Code smells ve design smells
 
-*Duplicated Code/Clones*, *Large Class/God Class*, *Feature Envy* ve *Long Method* sık tartışılan kokulardır. Makale özellikle adlandırma sorununu gösterir: *Blob*, *Large Class* ve *God Class* kimi kaynaklarda eş anlamlı, kimilerinde ayrı kavramlardır; *Copy and Paste Programming* de *Duplicated Code* ile eşleştirilebilir [1, Bölüm 4.2]. Bu durum araçların neyi ölçtüğünü ve sonuçların karşılaştırılabilirliğini etkiler.
+*Duplicated Code/Clones*, *Large Class/God Class*, *Feature Envy* ve *Long Method* sık tartışılan code smell örnekleridir. Makale özellikle adlandırma sorununu gösterir: *Blob*, *Large Class* ve *God Class* kimi kaynaklarda eş anlamlı, kimilerinde ayrı kavramlardır; *Copy and Paste Programming* de *Duplicated Code* ile eşleştirilebilir [1, Bölüm 4.2]. Bu durum araçların neyi ölçtüğünü ve sonuçların karşılaştırılabilirliğini etkiler.
 
 RQ2'nin girişinde 27 S-kodu listelenirken genel tema dağılımı 25 smell çalışması verir; code smell alt bölümünde ise 28 çalışmanın code smell'lerden söz ettiği belirtilir. Bu sayılar aynı sınıflandırma düzeyine ait değildir. S29 ve S36 refactoring listesinde de yer alır; code smell alt bölümündeki liste ise ana teması başka olan fakat code smell'e değinen çalışmaları da içerir. Dolayısıyla 25, 27 ve 28 sayıları birbiriyle değiştirilemez: ilki Şekil 5'teki ana tema, ikincisi RQ2 kapsam listesi, üçüncüsü code smell anan çalışmaların listesidir [1, Bölüm 3.6; Bölüm 4.2].
 
@@ -52,25 +52,29 @@ Tespit yaklaşımlarında metrik ve kural tabanlı yöntemler öne çıkar; anca
 
 ### 4.3 RQ3 — Diller ve araçlar
 
-On dokuz ikincil çalışma 162'den fazla smell tespit aracı anar. CCFinder ve PMD bu çalışmaların dokuzunda (%47,36), inCode sekizinde (%42,10), DECOR/DETEX ve inFusion yedisinde (%36,84) geçer. Özgün metin DECOR/DETEX için yedi çalışma sıralamasına rağmen oranı `%42,10` yazar; yedi çalışmanın 19 içindeki matematiksel karşılığı `%36,84` olduğundan raporda düzeltilmiş oran kullanılmıştır. Payda tüm 40 değil, araç bildiren 19 çalışmadır. Refactoring tarafında 13 çalışmada 24 farklı araç anılır; JDeodorant en sık anılandır [1, Bölüm 4.3]. Anılma sıklığı bağımsız doğruluk veya kullanılabilirlik ölçümü değildir.
+Yazarlar sonuç bölümünde 162 farklı tespit aracı, Bölüm 4.3.3'te ise 24 farklı refactoring aracı bildirir [1].
 
-Platform/dil belirten 35 çalışmanın tamamı Java'yı kullanılan bir teknoloji olarak anar; Java'yı 20 çalışmayla C++ (%57,14) ve 15 çalışmayla C# (%42,85) izler [1, Bölüm 4.3.1, Şekil 12]. “Java %57,14 — 35 çalışma” yorumu yanlıştır: 35/35 Java'ya, `%57,14` ise C++'a aittir. Makale ayrıca mevcut araçların yalnız küçük bir smell kümesini, “3–4” türü kapsadığını ileri sürer [1, RQ3 özeti]. Bu sayı metinde doğrudan yer alsa da hesaplama yöntemi ve paydası açıklanmadığından ölçülmüş bir ortalama gibi kullanılmamalıdır. Az sayıda aracın çoklu dil desteklemesi de önemli bir boşluktur.
+Araç bildiren 19 ikincil çalışmanın dokuzunda CCFinder ve PMD, sekizinde inCode ve DECOR/DETEX, yedisinde inFusion geçer. DECOR/DETEX için Bölüm 4.3.2 yedi kod sıralar. Şekil 13 ve ek veri sekiz çalışmayı doğrular (8/19, yaklaşık %42,1). Refactoring araçları için JDeodorant 13 veri kaydının 10'unda geçer (yaklaşık %76,9). Makalede verilen %71,42 bu paydayla uyuşmaz. Bu sıklıklar araçların araştırmalarda ne kadar yer bulduğunu gösterir [1, Bölüm 4.3; 11].
+
+Platform veya dil bildiren 35 çalışmanın tamamı Java'yı anar. C++ 20 (%57,14), C# 15 (%42,85) çalışmada geçer. Bölüm 4.3.2, iki ikincil çalışmaya dayanarak araçların ortalama üç ila dört smell türünü kapsadığını bildirir. Bu ortalamanın hangi araç kümesi ve hesaplama yöntemiyle elde edildiği açıklanmadığından 162 araca genellenebilirliği belirsizdir [1, Bölüm 4.3; 11].
 
 ### 4.4 RQ4 — Araştırma sorularının yapısı
 
 Kırk çalışmada 181 RQ, çalışma başına ortalama 4,5 soru vardır. *Description and Classification* 90 soruyla havuzun %49,72'sini ve 30 çalışmayla çalışmaların %75'ini kapsar. Keşifsel ve temel sıklık soruları birlikte 152 RQ'ya (%83,97) ulaşırken, ilişki ve nedensellik soruları azınlıkta kalır. Yalnız dokuz soru (%4,97) ampirik/kanıta dayalı terimlerle ilişkilendirilmiş, *Causality-Comparative Interaction* ve *Design* kategorilerinde soru bulunmamıştır [1, Bölüm 4.4.1; Tablo 10]. Bu dağılım, literatürün ağırlıkla “ne var ve nasıl sınıflandırılır?” sorularını yanıtladığını; koşula bağlı nedensellik ve etkili çözüm tasarımı konusunda daha sınırlı olduğunu gösterir.
 
-Tablo 10'daki iki yüzde sütunu farklı paydalara sahiptir. Çalışma sütununda payda 40, RQ havuzu sütununda 181'dir. Aynı çalışma farklı türlerde sorular içerebildiği için çalışma yüzdeleri örtüşür ve toplamlarının `%100` olması beklenmez. Buna karşılık RQ havuzundaki her soru tek bir en özgül kategoriye yerleştirildiğinden bu sütunun toplamı 181 ve `%100`dür.
+Tablo 10'un çalışma sütununda payda 40'tır ve kategoriler örtüşebilir. Soru sütunundaki satırlar ise 185'e ulaşırken toplam 181 olarak bildirilmiştir. Ek veri 181 soruyu doğrular ve *Causality* kategorisinde tabloda verilen 14 yerine 10 soru gösterir (%5,52). Makaledeki 9/181 oranı soru metinlerinde aranan sözcüklerin eşleşme sıklığını verir [1, Bölüm 4.4.1; 11].
+
+Mens ve Tourwé (S10), Google Scholar verilerinde hem toplam atıfta hem yıllık atıfta ilk sıradadır. S10, S20 ve S26 her iki ilk beş listesinde de yer alır. Bu sıralamalar makalede kullanılan bibliyometrik kesite aittir [1, Bölüm 4.4.2, Tablo 12–13].
 
 ### 4.5 RQ5 — Zaman ve yöntem eğilimleri
 
 İlk ikincil çalışma 2004'te yayımlanmış, yayınlar 2013 sonrasında artmıştır. Kırk çalışmanın 26'sı SLR (%65), yedisi sistematik haritalama (%17,5), yedisi survey'dir (%17,5). S16 ayrıca *multivocal* niteliktedir; ayrı bir 41. çalışma değildir. Yayınların %75'i dergi, %25'i konferans makalesidir ve çalışmaların %80'den fazlası dört üzerinden üç ile dört arasında kalite puanı almıştır [1, Bölüm 4.5.1–4.5.3]. Puan, dört DARE sorusuna dayalı raporlama kalitesini gösterir; birincil bulguların doğruluğunu doğrudan kanıtlamaz.
 
-Deneylerde anılan projelerin %57'si açık kaynak/FLOSS projeleridir. Bu oran çalışmaların veya araçların `%57`si değil, ikincil çalışmalarda sözü edilen proje kümesinin dağılımıdır [1, Bölüm 4.5.2, Şekil 18]. Uzman doğrulamasının, endüstriyel örneklerin ve ortak benchmark'ların sınırlı olması RQ5'in temel yöntemsel açığıdır. Dolayısıyla ikincil yayın sayısındaki artış, birincil kanıtın kendiliğinden güçlendiği anlamına gelmez.
+Ek veride açık kaynak (FLOSS) 25, endüstriyel 15 ve örnek proje 4 kez işaretlenmiştir. Bir derleme birden fazla tür bildirebildiği için %57, 44 kategori kaydının 25'ine karşılık gelir. Şekil 20 için ise yazarlar, birincil çalışma sayısını belirtmeyen bazı derlemelerde kaynakça uzunluğunu vekil ölçüt olarak kullanır. Yıllık karşılaştırma bu nedenle farklı ölçüm türlerini bir araya getirir. Bildirilen 4.573, derlemelerin kaynakça kayıtları toplamıdır [1, Bölüm 4.5.2–4.5.3; 11].
 
 ### 4.6 Kalite ve QMOOD
 
-Yazarlar içsel kalite niteliklerini QMOOD üzerinden anlaşılabilirlik, işlevsellik, yeniden kullanılabilirlik ve bakım yapılabilirlik gibi dışsal niteliklerle eşleştirir. Şekil 24'te refactoring'in bu niteliklerle smell'lerden daha fazla ilişki gösterdiği ileri sürülür [1, Bölüm 5.2; 6]. Bu sonuç kontrollü deneyden türetilmiş nedensel etki büyüklüğü değildir. Yazarlar kapsamlı/yeterli kanıt bulunmadığını ve bağlama göre refactoring'in yeni kokular doğurabileceğini de söyler. Bu nedenle “refactoring her koşulda kaliteyi daha çok artırır” genellemesi yapılamaz.
+Yazarlar Şekil 24'te QMOOD'dan yararlanarak içsel metrikleri daha üst düzey kalite nitelikleriyle eşleştirir. Aynı metrik birden çok niteliğe bağlanabilir. Bölüm 5.2 kalite etkisine odaklanan yedi smell derlemesi ile bir refactoring derlemesi belirlediğinden iki tarafın kanıt kapsamı da farklıdır. Bu eşleme ilişkilerin kapsamını görselleştirir. Karşılaştırmalı etki büyüklüğü için ortak ölçüm, etki yönü ve karşılaştırılabilir örneklemler gerekir. Yazarlar ayrıca inceledikleri smell örneklerine yönelik 14 refactoring seçeneği için kendi sentezlerinde kalite etkisine ilişkin bağlantılı çalışma bulamadıklarını bildirir [1, Bölüm 5.2, Şekil 23–24; 6].
 
 ### 4.7 Açık araştırma sorunları
 
@@ -124,7 +128,7 @@ Fowler vd.'nin 1999 tarihli çalışması ise refactoring bilgisini geliştirici
 
 Bansiya ve Davis'in 2002 tarihli QMOOD modeli, nesne yönelimli tasarım özellikleri ile yeniden kullanılabilirlik, esneklik, anlaşılabilirlik, işlevsellik, genişletilebilirlik ve etkililik gibi üst düzey kalite nitelikleri arasında nicel ilişkiler kurmuştur [6]. Model, refactoring tarihinin doğrudan bir kataloğu değildir; buna karşılık, yapısal değişikliklerin kalite üzerindeki etkisini ölçme arayışının önemli bir örneğidir. Lacerda vd.'nin refactoring etkilerini QMOOD nitelikleri üzerinden yeniden gruplaması da bu ölçme geleneğine dayanır. Ancak bu yeniden gruplama, farklı bağlamlarda yürütülmüş araştırmaların sonuçlarını ortak başlıklar altında birleştirir; tek başına nedensel etki kanıtı oluşturmaz.
 
-Mens ve Tourwé'nin 2004 tarihli araştırması, refactoring alanındaki çalışmaları desteklenen etkinlikler, kullanılan teknikler, dönüştürülen yazılım artefaktları, araç desteği ve yazılım sürecine etkiler bakımından sistemleştirmiştir [5]. Bu çalışma, alanın tek tek dönüşüm kataloglarından araştırma soruları, biçimsel güvenceler ve araç tasarımı çevresinde örgütlenen bir inceleme alanına geçtiğini gösterir. Lacerda vd. bu yayını kendi tarama tarihlerindeki atıf verilerine göre en çok atıf alan ikincil çalışma olarak raporlamıştır [1]. Bu niteleme kalıcı bir sıralama değil, 2019 sonunda alınmış bibliyometrik bir kesittir.
+Mens ve Tourwé'nin 2004 tarihli araştırması, refactoring alanındaki çalışmaları desteklenen etkinlikler, kullanılan teknikler, dönüştürülen yazılım artefaktları, araç desteği ve yazılım sürecine etkiler bakımından sistemleştirmiştir [5]. Bu çalışma, alanın tek tek dönüşüm kataloglarından araştırma soruları, biçimsel güvenceler ve araç tasarımı çevresinde örgütlenen bir inceleme alanına geçtiğini gösterir.
 
 ### 6.4 Ampirik kanıtların çeşitlenmesi
 
@@ -146,7 +150,7 @@ Araştırma sorularının konu, araç, soru yapısı ve yıllık eğilimler biç
 
 Aynı birincil araştırmanın farklı ikincil çalışmalarda tekrar edilmesi, belirli bir bulgunun literatürde olduğundan daha baskın görünmesine yol açabilir. Üçüncül inceleme bu tekrarları ayrı deneysel doğrulamalar gibi değerlendirmemelidir. Benzer şekilde ikincil çalışmalarda deney bağlamı, örneklem büyüklüğü veya ölçüm yöntemi eksik raporlanmışsa bu eksiklik üçüncül senteze de taşınır. Bu nedenle çalışma, doğrudan bir meta-analizden çok araştırma alanının kapsamını ve eğilimlerini gösteren bir kanıt haritası olarak daha güçlüdür.
 
-Arama kapsamının sekiz veri tabanına yayılması kapsayıcılığı güçlendirir; buna karşılık sorguların veri tabanlarına göre uyarlanması sonuç kümelerinin tam olarak eşdeğer olmadığı anlamına gelir. Yazarların bildirdiği ortalama arama doğruluğu %12,63'tür ve veri tabanları arasında belirgin fark vardır [1, Bölüm 3.6]. Snowballing yedi ek çalışma sağlayarak duyarlılığı artırmış olsa da yalnız seçilen çalışmaların kaynakçalarına dayanması, başlangıç kümesinin sınırlarını bütünüyle ortadan kaldırmaz.
+Arama kapsamı veri tabanına göre değişir. Örneğin ScienceDirect araması iki dergiyle sınırlıdır [1, Tablo 5]. Bölüm 3 ve 8, bağımsız tarama ve kodlamanın nasıl yürütüldüğünü ve değerlendiriciler arasındaki uyuşmazlıkların nasıl giderildiğini açıkça belirtmez. Bu ayrıntılar, özellikle konu sınıflandırmalarının yeniden üretilebilirliğini değerlendirmeyi güçleştirir.
 
 ### 7.3 Genellenebilirlik
 
@@ -170,11 +174,13 @@ Ortak adlandırma ve tanım sözlüğü, aynı olgunun farklı etiketlenmesini a
 
 Java ve açık kaynak ağırlığının ötesine geçen, çok dilli ve endüstriyel bağlamlı çalışmalar gereklidir. Bunlar yalnız önce/sonra metrik farkını değil hata eğilimi, değişiklik maliyeti, anlaşılabilirlik, geliştirici zamanı ve uzun dönem etkileri izlemelidir. Eğitimde gerçekçi kod tabanlarında smell tanıma, test destekli refactoring ve kod incelemesi birleştirilebilir; fakat belirli öğretim yönteminin üstünlüğü ayrıca sınanmalıdır.
 
+Örneğin *Large Class* için *Extract Class* uygulanan sınıflar, benzer büyüklükte ve değişim geçmişine sahip sınıflarla karşılaştırılabilir. Her iki grupta aynı bakım görevi uygulanıp süre, kohezyon ve sınıflar arası bağımlılık ayrı ayrı ölçülebilir. Davranışın korunduğuna ilişkin kanıt için aynı regresyon testleri dönüşüm öncesinde ve sonrasında çalıştırılabilir. Bu tasarım, bir yapısal metrikteki değişimin bakım görevine nasıl yansıdığını sınamaya imkân verir.
+
 ## 9. Genel Sonuç
 
 Lacerda vd., *code smells* ile refactoring'i yazılım kalitesi çevresinde birleştiren kapsamlı bir üçüncül inceleme sunar. Kalıcı katkısı, neyin bilindiği ile neyin güvenilir biçimde bilinmediğini ayırmasıdır. Smell adlandırması tutarsız, araç desteği parçalı, kalite kanıtları heterojen ve akademi-endüstri bağı sınırlıdır. Çalışma aynı zamanda sınıf sorumluluğu, kohezyon, bağımlılık, kalıtım ve çok biçimlilik kavramlarını bakım problemiyle ilişkilendiren güçlü bir OOP çerçevesidir.
 
-Bu raporda RQ2 çalışma sayısı, dil yüzdeleri, Tablo 10 ve QMOOD yorumu özgün metin üzerinden sınırlandırılmıştır. Refactoring, kokunun varlığına verilen otomatik ve her zaman yararlı tepki değil; bağlam, davranış koruma ve kalite ödünleşimleriyle değerlendirilmesi gereken tasarım kararıdır.
+İncelemenin uygulamaya dönük sonucu, refactoring kararının ilgili sınıfın sorumluluğu, davranışın korunması ve kalite ödünleşimleri birlikte değerlendirilerek verilmesidir.
 
 ## Kaynakça
 
@@ -197,3 +203,5 @@ Bu raporda RQ2 çalışma sayısı, dil yüzdeleri, Tablo 10 ve QMOOD yorumu öz
 [9] Al Dallal, J. (2015). Identifying refactoring opportunities in object-oriented code: A systematic literature review. *Information and Software Technology, 58*, 231–249. https://doi.org/10.1016/j.infsof.2014.08.002
 
 [10] Sharma, T., & Spinellis, D. (2018). A survey on software smells. *Journal of Systems and Software, 138*, 158–173. https://doi.org/10.1016/j.jss.2017.12.034
+
+[11] Lacerda, G., Petrillo, F., Pimenta, M., & Guéhéneuc, Y.-G. (2020). *Online repository for tertiary systematic review about code smells and refactoring* (Sürüm 2) [Veri seti]. Mendeley Data. https://doi.org/10.17632/72fvy4r3gj.2

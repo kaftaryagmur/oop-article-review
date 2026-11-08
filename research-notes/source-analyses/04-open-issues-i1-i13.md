@@ -1,6 +1,6 @@
 # I1–I13 Ayrıntılı Analiz Kaydı
 
-Bu dosya ilk ayrıntılı çözümlemeyi korur. Tablo 14'ün doğrudan içeriği ile bu içerikten türetilen açıklamalar aynı kanıt düzeyinde değildir. Doğrulanmış başlıklar ve sınırlar için `../paper-evidence.md` ile `../verification-log.md` esas alınmalıdır. Özellikle `%57 FLOSS` I13'ün tanımı değil, Bölüm 4.5.2'de anılan deney projelerinin oranıdır; I8 için “14 tekniği inceleyen hiçbir çalışma yoktur” biçimindeki mutlak ifade de Tablo 14 tarafından desteklenmez.
+Bu dosya ilk çözümlemeyi korur. Güncel sayımlar ve kanıt sınırları [kanıt özeti](../paper-evidence.md) ile [doğrulama günlüğünde](../verification-log.md) yer alır.
 
 Lacerda vd.'nin (2020) **"Code smells and refactoring: A tertiary systematic review of challenges and observations"**[1] başlıklı makalesinin **Section 7 (Open Issues)** ve **Table 14** bölümlerinde tanımlanan **13 açık araştırma problemi (I1–I13)**[2] temel alınarak hazırlanmış yapılandırılmış araştırma notları aşağıda sunulmuştur.
 

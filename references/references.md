@@ -12,5 +12,6 @@ Raporun bilimsel dayanağını aşağıdaki birincil ve ikincil çalışmalar ol
 8. Sjøberg, D. I. K., Yamashita, A., Anda, B. C. D., Mockus, A., & Dybå, T. (2013). Quantifying the effect of code smells on maintenance effort. *IEEE Transactions on Software Engineering, 39*(8), 1144–1156. https://doi.org/10.1109/TSE.2012.89
 9. Al Dallal, J. (2015). Identifying refactoring opportunities in object-oriented code: A systematic literature review. *Information and Software Technology, 58*, 231–249. https://doi.org/10.1016/j.infsof.2014.08.002
 10. Sharma, T., & Spinellis, D. (2018). A survey on software smells. *Journal of Systems and Software, 138*, 158–173. https://doi.org/10.1016/j.jss.2017.12.034
+11. Lacerda, G., Petrillo, F., Pimenta, M., & Guéhéneuc, Y.-G. (2020). *Online repository for tertiary systematic review about code smells and refactoring* (Sürüm 2) [Veri seti]. Mendeley Data. https://doi.org/10.17632/72fvy4r3gj.2
 
 Tarihsel gelişim bölümü, alanın teknik ve kavramsal temelini kuran 2–5 numaralı eserleri, kalite değerlendirme çerçevesini sunan 6 numaralı çalışmayı ve ampirik kanıtların çeşitlenmesini gösteren 7–10 numaralı araştırmaları birlikte ele almaktadır.
