@@ -12,15 +12,15 @@ Kaynak: Lacerda vd. (2020). Bölüm, tablo ve şekil numaraları arXiv v1 tam me
 
 ## RQ1–RQ5
 
-- **RQ1:** İkincil çalışmalarda hangi refactoring konuları araştırılmıştır? Bölüm 4.1, refactoring temasına ayrılan 13 çalışmayı listeler.
-- **RQ2:** İkincil çalışmalarda hangi smell konuları araştırılmıştır? Bölüm 4.2'deki liste 27 S-kodu içerir; bunun tema dağılımındaki 25 ile aynı evren olmadığı unutulmamalıdır. S29 ve S36 iki temada da geçtiğinden bu liste birbirini dışlayan sınıf sayımı değildir.
+- **RQ1:** İkincil çalışmalarda hangi refactoring konuları araştırılmıştır? Bölüm 4.1, refactoring temasına ayrılan 13 çalışmayı listeler. İncelenen teknik kümesi 72 tekniğin 20–27'siyle sınırlıdır; smell-refactoring ilişkisi bire bir değildir ve refactoring her kalite niteliğini her zaman iyileştirmez.
+- **RQ2:** İkincil çalışmalarda hangi smell konuları araştırılmıştır? Bölüm 4.2'nin giriş listesi 27 S-kodu içerir; bunun tema dağılımındaki 25 ile aynı evren olmadığı unutulmamalıdır. Code smell alt bölümü ise code smell anan 28 çalışma listeler. Bu üç sayı sırasıyla ana tema dağılımı, RQ2 kapsam listesi ve alt konu anılma listesidir.
 - **RQ3:** Smell tespiti ve refactoring desteği için hangi araçlardan söz edilmiştir? Bölüm 4.3, 19 çalışmada 162'den fazla farklı smell aracı ve 13 çalışmada 24 refactoring aracı bildirir.
 - **RQ4:** Toplam 181 RQ (ortalama 4,5) vardır. Tablo 10'da Description and Classification 90/181 RQ ile en büyük havuz payına sahiptir. CCI ve Design türlerinde RQ yoktur.
 - **RQ5:** 40 çalışmanın 26'sı SLR (%65), 7'si SM (%17,5), 7'si survey'dir (%17,5). S16 ayrıca multivocal olarak nitelenmiştir; bu 41. çalışma değildir.
 
 ## Dil ve araç yüzdeleri
 
-Bölüm 4.3.1, platform/dil anan 35 çalışmanın Java'yı en çok kullanılan teknoloji olarak sunduğunu belirtir. Ardından gelen C++ ve C# oranları sırasıyla %57,14 ve %42,85'tir. Bu cümledeki oranları Java'ya bağlamak yanlıştır. CCFinder ve PMD, araç bildiren 19 çalışmanın %47,36'sında; inCode %42,10, DECOR/DETEX ve inFusion %36,84 oranında geçer.
+Bölüm 4.3.1'de listelenen 35 çalışmanın tamamı Java'yı anar. Ardından C++ 20/35 (%57,14), C# 15/35 (%42,85) gelir; bu oranları Java'ya bağlamak yanlıştır. CCFinder ve PMD araç bildiren 19 çalışmanın 9'unda (%47,36), inCode 8'inde (%42,10), DECOR/DETEX ve inFusion 7'sinde (%36,84) geçer. Özgün metin DECOR/DETEX için yedi çalışma sıralamasına rağmen `%42,10` verir; bu bir aritmetik tutarsızlıktır. RQ3 özeti araçların 3–4 smell kapsadığını doğrudan ileri sürer, ancak bu sayının nasıl hesaplandığını ve paydasını açıklamaz.
 
 ## Tablo 10'un doğru okunması
 
@@ -29,6 +29,10 @@ Tablo iki farklı payda verir: `# of studies` sütunundaki yüzdeler 40 çalış
 ## QMOOD yorumu
 
 Bölüm 5.2 ve Şekil 24, yalnızca seçilen ikincil çalışmalarda bulunan içsel nitelikleri QMOOD ilişkileriyle dışsal niteliklere yeniden dağıtır. Yazarların sonucu, bu yeniden gruplamada refactoring'in anlaşılabilirlik, işlevsellik, yeniden kullanılabilirlik ve bakım yapılabilirlik üzerinde smell'lerden daha fazla ilişki/etki gösterdiğidir. Bu, kontrollü deneylerden türetilmiş nedensel ve evrensel bir etki büyüklüğü değildir. Yazarlar kapsamlı ve yeterli kanıt bulunmadığını, bağlama göre refactoring'in yeni smell'lere de yol açabileceğini söyler.
+
+## RQ5 kapsam uyarıları
+
+Bölüm 4.5'te `%57 FLOSS`, çalışmalara veya araçlara değil deneylerde anılan projelere aittir. Çalışmaların `%80`den fazlasının 3–4 kalite puanı alması da dört DARE sorusuna göre raporlama kalitesini ifade eder; birincil kanıtların doğruluğu veya etki büyüklüğü değildir.
 
 ## I1–I13 (Tablo 14)
 

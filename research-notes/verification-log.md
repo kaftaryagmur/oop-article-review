@@ -1,6 +1,6 @@
 # Ön Analiz İddiaları Doğrulama Günlüğü
 
-Tarih: 2 Kasım 2026. Birincil doğrulama kaynağı Lacerda vd. (2020) arXiv v1 tam metnidir.
+İlk kayıt: 2 Kasım 2026. Son güncelleme: 8 Kasım 2026. Birincil doğrulama kaynağı Lacerda vd. (2020) arXiv v1 tam metnidir.
 
 **Çalışma üçüncül SLR'dir; 40 ikincil çalışmayı kapsar. — Doğrulandı.** **Kanıt ve değerlendirme:** Özet ve Bölüm 3.
 
@@ -10,13 +10,15 @@ Tarih: 2 Kasım 2026. Birincil doğrulama kaynağı Lacerda vd. (2020) arXiv v1 
 
 **25 smell, 13 refactoring, 2 ortak çalışma — Doğrulandı.** **Kanıt ve değerlendirme:** Bölüm 3.6 ve Şekil 5; birbirini dışlayan tema dağılımıdır.
 
-**RQ2'de 25 çalışma listelenmiştir. — Düzeltildi.** **Kanıt ve değerlendirme:** Bölüm 4.2 listesi 27 S-kodu içerir. S29 ve S36 RQ1 listesinde de vardır; 25 sayısı tema dağılımına aittir.
+**RQ2'de 25 çalışma listelenmiştir. — Düzeltildi.** **Kanıt ve değerlendirme:** Şekil 5'te 25 ana smell çalışması vardır; Bölüm 4.2 giriş listesi 27 S-kodu, code smell alt bölümü ise code smell anan 28 çalışma verir. Bunlar farklı sınıflandırma düzeyleridir ve birbirinin yerine kullanılamaz.
 
-**Java `%57,14 — 35 çalışma` — Düzeltildi.** **Kanıt ve değerlendirme:** Bölüm 4.3.1: 35 çalışma Java'yı en çok kullanılan teknoloji olarak belirtir; %57,14 C++'a, %42,85 C#'a aittir.
+**Java `%57,14 — 35 çalışma` — Düzeltildi.** **Kanıt ve değerlendirme:** Bölüm 4.3.1'deki 35 çalışmanın tamamı Java'yı anar; C++ 20/35 (%57,14), C# 15/35 (%42,85) oranındadır.
 
 **162'den fazla smell tespit aracı vardır. — Doğrulandı.** **Kanıt ve değerlendirme:** Bölüm 4.3.2, araç anan 19 çalışmanın birleşik kümesi; performans doğrulaması değildir.
 
 **CCFinder ve PMD %47,36'dır. — Doğrulandı.** **Kanıt ve değerlendirme:** Payda tüm 40 değil, araç bildiren 19 çalışmadır (9/19).
+
+**DECOR/DETEX `%42,10` oranındadır. — Makalede aritmetik tutarsızlık bulundu.** **Kanıt ve değerlendirme:** Bölüm 4.3.2 yedi çalışma kodu sıralar. 7/19 = `%36,84`tür; `%42,10` sekiz çalışmaya karşılık gelir. Raporda çalışma listesiyle uyumlu `%36,84` kullanılmıştır.
 
 **24 refactoring aracı vardır. — Doğrulandı.** **Kanıt ve değerlendirme:** Bölüm 4.3.3, 13 ikincil çalışmada adı geçen farklı araçlar.
 
@@ -32,11 +34,13 @@ Tarih: 2 Kasım 2026. Birincil doğrulama kaynağı Lacerda vd. (2020) arXiv v1 
 
 **I13 doğrudan “%57 FLOSS” bulgusudur. — Belirsiz.** **Kanıt ve değerlendirme:** Tablo 14 güvenilir veri kümeleri ve büyük ölçekli akademik/endüstriyel projeler ister; yüzdeyi I13'ün tanımı gibi sunmak aşırı yorumdur.
 
+**`%57 FLOSS` çalışmaların oranıdır. — Düzeltildi.** **Kanıt ve değerlendirme:** Bölüm 4.5.2 ve Şekil 18, bu oranı ikincil çalışmalarda anılan deney projeleri için verir; çalışmaların, araçların veya veri kümelerinin `%57`si olarak genellenemez.
+
 **Feature Envy kapsüllemeyi ihlal eder. — Yorum.** **Kanıt ve değerlendirme:** Makul OOP değerlendirmesidir; makalenin doğrudan bulgusu diye sunulmamalıdır.
 
 **I8 için “14 tekniğin kalite etkisini inceleyen hiçbir çalışma yoktur.” — Doğrulanmadı.** **Kanıt ve değerlendirme:** Bu güçlü mutlak ifade Tablo 14 tarafından desteklenmemektedir.
 
-**Araçlar ortalama yalnızca 3–4 smell türünü kapsar. — Doğrulanmadı.** **Kanıt ve değerlendirme:** Özgün makalenin ilgili bölümünde bu ortalamayı destekleyen açık bir payda verilmemektedir.
+**Araçlar yalnızca 3–4 smell türünü kapsar. — Makale iddiası doğrulandı; nicel dayanağı belirsiz.** **Kanıt ve değerlendirme:** RQ3 özetinde bu aralık doğrudan yazılmıştır. Ancak bunun ortalama mı, tipik aralık mı olduğu, hangi araç kümesinden ve hangi hesapla üretildiği açıklanmaz; bu nedenle bağımsız ölçüm gibi sunulamaz.
 
 
 ## Akademik dürüstlük kararı
