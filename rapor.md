@@ -144,15 +144,11 @@ Al Dallal'ın 2015 tarihli sistematik derlemesi, refactoring fırsatlarını bel
 
 ### 7.1 Yöntemsel güçlü yönler
 
-Makalenin gücü, parçalı iki alanı aynı kanıt haritasında birleştirmesidir. Sekiz kaynak, açık seçim akışı, kalite değerlendirmesi ve çoğaltma paketi izlenebilirliği artırır. RQ'lar yalnız teknik/araçları değil ikincil araştırmaların soru yapılarını da inceler; bulgular uygulayıcı, araştırmacı ve eğitici açısından tartışılır.
-
-Araştırma sorularının konu, araç, soru yapısı ve yıllık eğilimler biçiminde ayrılması, çalışmanın yalnızca kaynak sayan bir bibliyografik özet olmasını engeller. Tablo 8'de code smell türlerinin tespit yaklaşımları, araçlar ve olası refactoring teknikleriyle birlikte gösterilmesi de parçalı bilgileri aynı bağlamda okumayı kolaylaştırır. Ayrıca yazarların gözlem ile açık sorun arasında ayrım yapması, literatürde sık tekrarlanan iddiaların kesin kanıt olarak sunulması riskini azaltan önemli bir yöntemsel tercihtir.
+Makalenin başlıca katkısı, code smell tespitiyle refactoring araştırmalarını ortak bir çerçevede incelemesidir. Tablo 8, bir tasarım belirtisinden yola çıkarak literatürde hangi tespit yöntemlerinin ve hangi dönüşüm seçeneklerinin tartışıldığını izlemeye olanak verir. Açık seçim akışı ve ek veri paketi, bu eşleştirmelerin dayandığı derlemeleri kontrol etmeyi kolaylaştırır [1, Bölüm 3 ve Tablo 8; 11].
 
 ### 7.2 Üçüncül incelemenin kanıt sınırları
 
-Üçüncül inceleme ise ikincil çalışmaların kapsamı ve raporlama kalitesiyle sınırlıdır. Aynı birincil çalışma birden fazla derlemeye girmiş olabilir; kanıt bağımsızlığı zayıflayabilir. İngilizce, çevrim içi ve altı sayfadan uzun çalışma koşulları yanlılık yaratır. *Card sorting* kategorileri yorumlayıcıdır. Ayrıca dil yüzdeleri ile RQ2'deki örtüşen listeler kolay yanlış okunmaktadır.
-
-Aynı birincil araştırmanın farklı ikincil çalışmalarda tekrar edilmesi, belirli bir bulgunun literatürde olduğundan daha baskın görünmesine yol açabilir. Üçüncül inceleme bu tekrarları ayrı deneysel doğrulamalar gibi değerlendirmemelidir. Benzer şekilde ikincil çalışmalarda deney bağlamı, örneklem büyüklüğü veya ölçüm yöntemi eksik raporlanmışsa bu eksiklik üçüncül senteze de taşınır. Bu nedenle çalışma, doğrudan bir meta-analizden çok araştırma alanının kapsamını ve eğilimlerini gösteren bir kanıt haritası olarak daha güçlüdür.
+Üçüncül incelemenin yorum gücü, dayandığı derlemelerin raporlama kalitesi ve kapsamıyla sınırlıdır. Birincil çalışmaların derlemeler arasındaki örtüşmesi ölçülmeden, bir bulgunun farklı derlemelerde yer alması kaç bağımsız araştırmanın onu desteklediğini göstermez. Deney bağlamı, örneklem veya ölçüm ayrıntıları derlemelerde eksikse bu belirsizlik üçüncül senteze de taşınır.
 
 Arama kapsamı veri tabanına göre değişir. Örneğin ScienceDirect araması iki dergiyle sınırlıdır [1, Tablo 5]. Bölüm 3 ve 8, bağımsız tarama ve kodlamanın nasıl yürütüldüğünü ve değerlendiriciler arasındaki uyuşmazlıkların nasıl giderildiğini açıkça belirtmez. Bu ayrıntılar, özellikle konu sınıflandırmalarının yeniden üretilebilirliğini değerlendirmeyi güçleştirir.
 
@@ -164,13 +160,9 @@ Açık kaynak projeler tekrarlanabilirlik ve veri erişimi açısından değerli
 
 ### 7.4 Kanıt ile yorumun ayrılması
 
-QMOOD sentezi ortak görünüm sağlasa da etki büyüklüklerini, çalışma kalitesini ve bağlamsal değişkenleri nicel meta-analizde birleştirmez. “Refactoring kaliteyi smell'lerden daha fazla etkiler” yazarların sentez sonucudur; her projede net olumlu sonuç kanıtı değildir.
+QMOOD eşleştirmesi hangi kalite niteliklerinin hangi dönüşümlerle ilişkilendirildiğini gösterir. Belirli bir *Extract Class* müdahalesinin bakım maliyetini değiştirip değiştirmediğini değerlendirmek için ise ölçülen çıktının tanımlanması gerekir. §6.4'teki iki araştırma bu ayrımı somutlaştırır. Bir sınıfın daha sık değişmesi ile belirli bir bakım görevinin daha uzun sürmesi farklı sonuçlardır. Birindeki ilişkiyi diğerine taşımak için iki çıktıyı da gözleyen bir çalışma gerekir [1, Bölüm 5.2; 7; 8].
 
-Benzer biçimde bir aracın çok sayıda ikincil çalışmada anılması, o aracın daha doğru, güncel veya kullanışlı olduğunu göstermez. Literatürde 162'den fazla tespit aracının bulunması da sonuçların birbiriyle tutarlı olduğu anlamına gelmez. Code smell tespit edilmesi kesin bir yazılım hatasının varlığını kanıtlamadığı gibi, önerilen refactoring'in uygulanması da bütün kalite niteliklerini aynı anda iyileştirmeyebilir. Bu ayrımlar, frekans bulgularıyla etkinlik bulgularının ve ilişkiyle nedenselliğin karıştırılmaması açısından önemlidir.
-
-Tablo 14'te I1–I6 smell, I7–I11 refactoring, I12–I13 iki alanla ilgilidir. I1 (adlandırma), I5/I8 (kalite), I9 (araç), I13 (veri kümeleri ve akademi-endüstri tutarlılığı) eleştirel tartışma için güçlüdür. Bu kısa gözlemlerden türetilen ayrıntılı çözümler doğrudan makale ifadesi sayılmamalıdır; örneğin Feature Envy ile kapsülleme arasındaki ilişki makul bir OOP yorumudur, fakat Tablo 14'ün doğrudan bulgusu değildir.
-
-Sonuç olarak makalenin en güçlü yönü geniş ve izlenebilir bir araştırma haritası sunmasıdır. En önemli sınırlılığı ise farklı yöntem, örneklem ve kalite ölçütlerine dayanan ikincil çalışmaları ortak bir anlatı içinde birleştirmesidir. Bulgular bu nedenle kesin neden-sonuç hükümleri olarak değil, alandaki eğilimleri, uzlaşıları ve doğrulanmayı bekleyen araştırma sorunlarını gösteren bir sentez olarak okunmalıdır.
+Bu sınır, Tablo 14'teki I5 ve I8'in birlikte okunmasıyla belirginleşir. Önce bir code smell'in hangi kalite sorunuyla hangi bağlamda ilişkili olduğu incelenir. Ardından seçilen dönüşümün aynı sonuç üzerindeki etkisi uygun bir karşılaştırmayla sınanır. §8'deki araştırma önerisi bu ikinci soruyu bakım süresi üzerinden somutlaştırır.
 
 ## 8. Geliştirme ve Gelecek Çalışma Önerileri
 
@@ -184,9 +176,9 @@ Dönüşüm öncesinde ve sonrasında aynı regresyon testleri çalıştırılar
 
 ## 9. Genel Sonuç
 
-Lacerda vd., *code smells* ile refactoring'i yazılım kalitesi çevresinde birleştiren kapsamlı bir üçüncül inceleme sunar. Kalıcı katkısı, neyin bilindiği ile neyin güvenilir biçimde bilinmediğini ayırmasıdır. Smell adlandırması tutarsız, araç desteği parçalı, kalite kanıtları heterojen ve akademi-endüstri bağı sınırlıdır. Çalışma aynı zamanda sınıf sorumluluğu, kohezyon, bağımlılık, kalıtım ve çok biçimlilik kavramlarını bakım problemiyle ilişkilendiren güçlü bir OOP çerçevesidir.
+Lacerda vd.'nin üçüncül incelemesi, code smell adlandırmasının, tespit yöntemlerinin ve refactoring seçeneklerinin literatürde nasıl ele alındığını ortaya koyar. İncelemenin OOP açısından değeri, bir tasarım belirtisini sınıf sorumluluğu, kohezyon ve bağımlılık üzerinden tartışmaya açmasıdır. Kalite sentezinin kapsamı, hangi dönüşümün belirli bir bakım görevinde ne ölçüde yarar sağlayacağını belirlemek için sınırlıdır [1, Tablo 8 ve Bölüm 5.2].
 
-İncelemenin uygulamaya dönük sonucu, refactoring kararının ilgili sınıfın sorumluluğu, davranışın korunması ve kalite ödünleşimleri birlikte değerlendirilerek verilmesidir.
+Bu raporun uygulamaya dönük değerlendirmesine göre refactoring kararı, çözülmek istenen tasarım sorunu ve iyileştirilmesi beklenen bakım çıktısıyla birlikte tanımlanmalıdır. Örneğin *Extract Class* sonrasında sorumluluk dağılımındaki değişim tasarım metrikleriyle, davranışın korunması regresyon testleriyle, bakım kazancı ise görev süresi ve dönüşüm maliyetiyle ayrı ayrı değerlendirilebilir.
 
 ## Kaynakça
 
