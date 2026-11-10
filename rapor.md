@@ -112,6 +112,12 @@ Makalenin Tablo 8'deki eşleştirmeleri, code smell türleri ile refactoring tek
 
 Bu nedenle code smell, kesin hata kararı değil tasarımın yeniden incelenmesini sağlayan bir belirtidir. Refactoring de kendi başına amaç değil, davranışı koruyarak tasarımın anlaşılabilirliğini ve değiştirilebilirliğini geliştirmeye yarayan bir araçtır. OOP ilkeleri bu kararda mekanik eşikler sunmak yerine sorumluluk, kapsülleme, bağımlılık, kalıtım ve çok biçimlilik açısından değerlendirme ölçütleri sağlar. Araç önerisi başlangıç noktası olabilir; nihai karar sistem bağlamını ve kalite ödünleşimlerini bilen geliştirici tarafından verilmelidir.
 
+### 5.5 Sipariş sınıfında Extract Class kararı
+
+Tablo 8'de *Large Class/God Class* için anılan dönüşümlerden biri *Extract Class*'tır [1, Tablo 8]. Bu eşleştirmeyi değerlendirmek için varsayımsal bir sipariş sistemi düşünelim. `Siparis` sınıfı hem siparişin durum geçişlerini yönetiyor hem de tutar ve indirim hesaplıyor. İndirim kuralları siparişin durum geçişlerinden bağımsız değişiyorsa, hesaplamalar `Fiyatlandirma` sınıfında toplanabilir. `Siparis` durum geçişlerinden sorumlu kalır ve fiyatlandırma bileşenine hesaplama için gereken verileri iletir. Böylece bir indirim kuralı değiştiğinde değişikliğin fiyatlandırma bileşeniyle sınırlı kalması beklenir.
+
+Hesaplama siparişin iç durumuna sık sık erişiyor veya o durumu güncelliyorsa, aynı ayrım iki sınıf arasında daha fazla veri ve kontrol akışı doğurabilir. Bu durumda sınıf boyutu azalırken bağımlılık artabilir. İndirim uygulanmayan sipariş, birden fazla indirim kuralı ve yuvarlama sınırı gibi durumlarda toplam tutar, hata davranışı ve sipariş durumu dönüşüm öncesi ve sonrası karşılaştırılabilir. Örnek, Bölüm 8'deki çalışma önerisine somut bir bakım görevi sağlar: mevcut sipariş akışını koruyarak yeni bir indirim kuralı eklemek.
+
 ## 6. Alanın Gelişimi ve Temel Kaynaklar
 
 ### 6.1 Davranışı koruyan dönüşümlerin teknik temeli
