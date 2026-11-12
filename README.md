@@ -32,6 +32,7 @@ Rapor aşağıdaki konuları ele almaktadır:
 oop-article-review/
 ├── README.md
 ├── rapor.md
+├── sunum-rehberi.md
 ├── PROJECT_CONTEXT.md
 ├── references/
 │   └── references.md
@@ -45,6 +46,8 @@ oop-article-review/
 ```
 
 `rapor.md`, akademik incelemenin ana metnidir. `references/` kullanılan kaynakların doğrulanmış künyelerini içerir. `research-notes/` altında özgün makaleden çıkarılan kanıtlar, iddia doğrulamaları ve kaynak analizleri yer alır. `figures/` raporda kullanılabilecek görseller, `final/` ise son teslim çıktıları için ayrılmıştır.
+
+[Sunum rehberi](sunum-rehberi.md), incelemenin beş dakikalık anlatım akışını ve olası sorulara kaynaklı yanıtları içerir. Raporun teslim sürümleri [PDF](final/makale-inceleme-raporu.pdf) ve [Word](final/makale-inceleme-raporu.docx) biçiminde erişilebilir.
 
 ## Akademik yaklaşım
 
