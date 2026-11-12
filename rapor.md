@@ -4,6 +4,10 @@
 
 **Lacerda, G., Petrillo, F., Pimenta, M. ve Guéhéneuc, Y.-G. (2020).** “Code Smells and Refactoring: A Tertiary Systematic Review of Challenges and Observations.” *Journal of Systems and Software*, 167, 110610. https://doi.org/10.1016/j.jss.2020.110610. Açık ön baskı: https://arxiv.org/abs/2004.10777
 
+## Öz
+
+Bu rapor, Lacerda vd.'nin 40 ikincil çalışmaya dayanan üçüncül literatür incelemesini nesneye dayalı tasarım açısından değerlendirir. Makalenin tablo ve şekilleri yazarların ek verisiyle karşılaştırıldığında, araştırma sorularının sınıflandırılmasında ve araç sayımlarında yorumlamayı etkileyen uyuşmazlıklar görülür. Makalenin başlıca katkısı, code smell tespit yöntemleri ile olası refactoring seçeneklerini bir araya getirmesidir. Belirli bir dönüşümün bakım süresine etkisini değerlendirmek için doğrudan karşılaştırma gerekir. Rapor, sipariş sınıfında fiyatlandırma sorumluluğunun ayrılmasını örnek alarak davranışın korunmasını, bakım süresini ve dönüşüm maliyetini ayrı ölçen bir araştırma tasarımı önerir.
+
 ## 1. Giriş
 
 Yazılım bakımı hata düzeltmenin yanında yeni gereksinimlere uyum ve işlev ekleme faaliyetlerini kapsar. Lacerda vd., önceki kaynaklara dayanarak bakımın toplam yazılım maliyetindeki payının %50–%80 aralığında bildirildiğini belirtir. Tasarım kararları aşındıkça kod karmaşıklaşır; yetersiz dokümantasyon koşullarında kaynak kod sistem hakkındaki başlıca bilgi kaynağına dönüşür. *Code smell*, doğrudan bir program hatası olmak zorunda olmayan, fakat bakım ve evrimi zorlaştıran yapısal bir belirtidir. *Refactoring* (yeniden yapılandırma) ise yazılımın gözlemlenebilir davranışını koruyarak iç yapısını iyileştirmeyi amaçlayan dönüşümlerdir [1].
@@ -147,6 +151,8 @@ Bu iki bulgu farklı bakım sorularını yanıtlar. Sürüm geçmişi bir sını
 Al Dallal'ın 2015 tarihli sistematik derlemesi, refactoring fırsatlarını belirleyen 47 birincil çalışmayı incelemiş; *Extract Class* ve *Move Method* işlemlerinin öne çıktığını, değerlendirmelerin çoğunlukla akademik araştırmacılar tarafından açık kaynak ve görece küçük veri kümeleri üzerinde yapıldığını göstermiştir [9]. Sharma ve Spinellis ise 445 birincil çalışmayı sentezleyerek smell tanımlarındaki çeşitliliği, beş temel tespit yaklaşımını ve mevcut araçların yanlış pozitifler ile sınırlı smell kapsamı sorunlarını belirlemiştir [10]. Böylece tarihsel çizgi, 1990'lardaki güvenli dönüşüm ve katalog oluşturma çabasından, 2000'lerde alanın sistemleştirilmesine; oradan da büyük literatür kümelerinde kanıtın kapsamını ve sınırlarını sorgulayan ikincil araştırmalara ilerlemiştir. Lacerda vd.'nin üçüncül incelemesi bu çizginin son halkasında, sonuçları tek bir kesin hükme indirgemek yerine hangi konularda uzlaşma veya belirsizlik bulunduğunu haritalandırmaktadır [1].
 
 ## 7. Eleştirel Değerlendirme
+
+Al Dallal'ın derlemesi ile Sharma ve Spinellis'in incelemesi, Lacerda vd.'nin örnekleminde sırasıyla S22 ve S15 olarak yer alır [1, Tablo 6; 9; 10]. Bu eserler üçüncül sentezin hangi bulgulara dayandığını izlemeyi sağlar. Aynı bulgunun bu derlemelerde ve üçüncül makalede yer alması, birbirinden bağımsız ampirik destek sayısını artırmaz.
 
 ### 7.1 Yöntemsel güçlü yönler
 
