@@ -172,9 +172,9 @@ Açık kaynak projeler tekrarlanabilirlik ve veri erişimi açısından değerli
 
 ### 7.4 Kanıt ile yorumun ayrılması
 
-QMOOD eşleştirmesi hangi kalite niteliklerinin hangi dönüşümlerle ilişkilendirildiğini gösterir. Belirli bir *Extract Class* müdahalesinin bakım maliyetini değiştirip değiştirmediğini değerlendirmek için ise ölçülen çıktının tanımlanması gerekir. §6.4'teki iki araştırma bu ayrımı somutlaştırır. Bir sınıfın daha sık değişmesi ile belirli bir bakım görevinin daha uzun sürmesi farklı sonuçlardır. Birindeki ilişkiyi diğerine taşımak için iki çıktıyı da gözleyen bir çalışma gerekir [1, Bölüm 5.2; 7; 8].
+QMOOD eşleştirmesi hangi kalite niteliklerinin hangi dönüşümlerle ilişkilendirildiğini gösterir. Belirli bir *Extract Class* müdahalesinin bakım maliyetini değiştirip değiştirmediğini değerlendirmek için ise ölçülen çıktının tanımlanması gerekir. 6.4 numaralı bölümde ele alınan iki araştırma bu ayrımı somutlaştırır. Bir sınıfın daha sık değişmesi ile belirli bir bakım görevinin daha uzun sürmesi farklı sonuçlardır. Birindeki ilişkiyi diğerine taşımak için iki çıktıyı da gözleyen bir çalışma gerekir [1, Bölüm 5.2; 7; 8].
 
-Bu sınır, Tablo 14'teki I5 ve I8'in birlikte okunmasıyla belirginleşir. Önce bir code smell'in hangi kalite sorunuyla hangi bağlamda ilişkili olduğu incelenir. Ardından seçilen dönüşümün aynı sonuç üzerindeki etkisi uygun bir karşılaştırmayla sınanır. §8'deki araştırma önerisi bu ikinci soruyu bakım süresi üzerinden somutlaştırır.
+Bu sınır, Tablo 14'teki I5 ve I8'in birlikte okunmasıyla belirginleşir. Önce bir code smell'in hangi kalite sorunuyla hangi bağlamda ilişkili olduğu incelenir. Ardından seçilen dönüşümün aynı sonuç üzerindeki etkisi uygun bir karşılaştırmayla sınanır. 8. bölümdeki araştırma önerisi bu ikinci soruyu bakım süresi üzerinden somutlaştırır.
 
 ## 8. Geliştirme ve Gelecek Çalışma Önerileri
 
